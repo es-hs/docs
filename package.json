@@ -9,11 +9,14 @@
   },
   "repository": "/developer",
   "scripts": {
+    "serve": "nodemon --ext md,vue --watch .vuepress --watch . --exec vuepress dev src",
     "dev": "vuepress dev src",
     "build": "vuepress build src"
   },
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.5.3"
+    "nodemon": "^2.0.12",
+    "vuepress": "^1.5.3",
+    "vuepress-plugin-smooth-scroll": "0.0.10"
   }
 }

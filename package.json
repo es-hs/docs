@@ -11,8 +11,7 @@
   "scripts": {
     "serve": "nodemon --ext md,vue --watch .vuepress --watch . --exec vuepress dev src",
     "dev": "vuepress dev src",
-    "build": "vuepress build src",
-    "deploy": "firebase deploy"
+    "build": "vuepress build src"
   },
   "license": "MIT",
   "devDependencies": {

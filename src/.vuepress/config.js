@@ -1,6 +1,6 @@
-const { description } = require("../../package");
 
 module.exports = {
+  dest: 'docs',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
@@ -8,7 +8,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: description,
+  description: "Tài liệu hướng dẫn cho lập trình viên Headless Storefront",
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -21,6 +21,10 @@ module.exports = {
     [
       "meta",
       { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
+    [
+      "meta",
+      { name: "robots", content: "noindex" },
     ],
     [
       "script",

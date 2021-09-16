@@ -1,3 +1,6 @@
+---
+sidebar: auto
+---
 # Changelog
 
 ## 16/09/2021

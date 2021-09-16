@@ -59,11 +59,54 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
+        text: "Introduce",
+        link: "/introduce/",
+      },
+      {
+        text: "Global Styles",
+        link: "/global-styles/",
+      },
+      {
         text: "Components",
         link: "/components/",
       },
+      {
+        text: "Online Store",
+        link: "/online-store/",
+      },
+      {
+        text: "AWS",
+        link: "/aws/",
+      },
+      {
+        text: "Dashboard",
+        link: "/dashboard/",
+      },
+      {
+        text: "Editor",
+        link: "/editor/",
+      },
+      {
+        text: "Admin",
+        link: "/admin/",
+      },
+      {
+        text: "Changelog",
+        link: "/changelog/",
+      },
+      {
+        text: "Github",
+        link: "https://github.com/es-hs",
+      },
     ],
     sidebar: {
+      "/global-styles/": [
+        {
+          title: "Global Styles",
+          collapsable: false,
+          children: [""],
+        },
+      ],
       "/components/": [
         {
           title: "Components",

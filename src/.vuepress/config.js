@@ -1,4 +1,3 @@
-
 module.exports = {
   dest: 'docs',
   base: '/docs/',
@@ -114,6 +113,7 @@ module.exports = {
           children: ["", "atoms"],
         },
       ],
+      "/changelog/": [],
     },
   },
 

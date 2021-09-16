@@ -1,6 +1,7 @@
 
 module.exports = {
   dest: 'docs',
+  base: '/docs/',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Atoms | Headless Storefront Dev</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <script>
+        window.onload = function() {
+          requestAnimationFrame(function() {
+            if (location.hash) {
+              const element = document.getElementById(location.hash.slice(1));
+
+              if (element) {
+                element.scrollIntoView();
+              }
+            }
+          });
+        };
+      </script>
+    <meta name="description" content="Tài liệu hướng dẫn cho lập trình viên Headless Storefront">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="robots" content="noindex">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.7792b47b.css" as="style"><link rel="preload" href="/docs/assets/js/app.b3934109.js" as="script"><link rel="preload" href="/docs/assets/js/2.6bd783f9.js" as="script"><link rel="preload" href="/docs/assets/js/7.b88a9935.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.60047317.js"><link rel="prefetch" href="/docs/assets/js/11.0acfe1b9.js"><link rel="prefetch" href="/docs/assets/js/12.044f417e.js"><link rel="prefetch" href="/docs/assets/js/13.bf48523c.js"><link rel="prefetch" href="/docs/assets/js/14.98620b61.js"><link rel="prefetch" href="/docs/assets/js/15.c18048e0.js"><link rel="prefetch" href="/docs/assets/js/16.52bdd055.js"><link rel="prefetch" href="/docs/assets/js/17.3525bd70.js"><link rel="prefetch" href="/docs/assets/js/18.16526ca5.js"><link rel="prefetch" href="/docs/assets/js/19.1dea04d6.js"><link rel="prefetch" href="/docs/assets/js/20.a4191fda.js"><link rel="prefetch" href="/docs/assets/js/21.886600d1.js"><link rel="prefetch" href="/docs/assets/js/22.5a7006d6.js"><link rel="prefetch" href="/docs/assets/js/23.3362b6a3.js"><link rel="prefetch" href="/docs/assets/js/24.f462a29c.js"><link rel="prefetch" href="/docs/assets/js/3.83494fc4.js"><link rel="prefetch" href="/docs/assets/js/4.01e3e4e8.js"><link rel="prefetch" href="/docs/assets/js/5.25b132ac.js"><link rel="prefetch" href="/docs/assets/js/6.51294091.js"><link rel="prefetch" href="/docs/assets/js/8.31e603ce.js"><link rel="prefetch" href="/docs/assets/js/9.74c7bd04.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.7792b47b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Headless Storefront Dev</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/introduce/" class="nav-link">
+  Introduce
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Frontend" class="dropdown-title"><span class="title">Frontend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Frontend" class="mobile-dropdown-title"><span class="title">Frontend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Customer
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/global-styles/" class="nav-link">
+  Global Styles
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/components/" class="nav-link router-link-active">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/dashboard/" class="nav-link">
+  Dashboard
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/editor/" class="nav-link">
+  Editor
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/admin/" class="nav-link">
+  Admin
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Backend" class="dropdown-title"><span class="title">Backend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Backend" class="mobile-dropdown-title"><span class="title">Backend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          General
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/aws/" class="nav-link">
+  AWS
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/code-conversion/" class="nav-link">
+  Code Conversion
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/build-code/" class="nav-link">
+  Build Code
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/dashboard-editor/" class="nav-link">
+  Dashboard Editor
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/changelog/" class="nav-link">
+  Changelog
+</a></div><div class="nav-item"><a href="https://github.com/es-hs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/introduce/" class="nav-link">
+  Introduce
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Frontend" class="dropdown-title"><span class="title">Frontend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Frontend" class="mobile-dropdown-title"><span class="title">Frontend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Customer
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/global-styles/" class="nav-link">
+  Global Styles
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/components/" class="nav-link router-link-active">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/dashboard/" class="nav-link">
+  Dashboard
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/editor/" class="nav-link">
+  Editor
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/admin/" class="nav-link">
+  Admin
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Backend" class="dropdown-title"><span class="title">Backend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Backend" class="mobile-dropdown-title"><span class="title">Backend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          General
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/aws/" class="nav-link">
+  AWS
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/code-conversion/" class="nav-link">
+  Code Conversion
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/build-code/" class="nav-link">
+  Build Code
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/dashboard-editor/" class="nav-link">
+  Dashboard Editor
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/changelog/" class="nav-link">
+  Changelog
+</a></div><div class="nav-item"><a href="https://github.com/es-hs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="atoms"><a href="#atoms" class="header-anchor">#</a> Atoms</h1> <h2 id="atom-la-gi"><a href="#atom-la-gi" class="header-anchor">#</a> Atom là gì?</h2> <p>Atom được hiểu đơn giản là phần tử bé nhất của một website. Chúng được cấu thành từ HTML, CSS, JS.</p> <p>Một số atom như: Button, Heading, Text, Image, Icon...</p> <h2 id="cau-truc-co-ban-cua-mot-atom"><a href="#cau-truc-co-ban-cua-mot-atom" class="header-anchor">#</a> Cấu trúc cơ bản của một atom</h2> <p>Bạn có thể tham khảo code bên dưới, đây là một cấu trúc cơ bản của atom với các thành phần: Props, Styles, Function</p> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">&quot;styled-components&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">type</span> <span class="token class-name">ButtonProps</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">/**
+  Unique id of the atom
+  */</span>
+  uid<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  <span class="token comment">/**
+  Align the button according to the wapper
+  */</span>
+  align<span class="token operator">?</span><span class="token operator">:</span> <span class="token string">&quot;left&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;right&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;center&quot;</span><span class="token punctuation">;</span>
+  <span class="token comment">/**
+  Set children of button
+  */</span>
+  children<span class="token operator">:</span> React<span class="token punctuation">.</span>ReactNode<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> StyledWapper <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  text-align: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token punctuation">{</span> theme<span class="token punctuation">,</span> settings <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> settings<span class="token operator">?.</span>align <span class="token operator">||</span> theme<span class="token punctuation">.</span>align<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Primary UI component for user interaction
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">Button</span><span class="token punctuation">(</span><span class="token punctuation">{</span> uid<span class="token punctuation">,</span> align <span class="token operator">=</span> <span class="token string">&quot;left&quot;</span><span class="token punctuation">,</span> children <span class="token punctuation">}</span><span class="token operator">:</span> ButtonProps<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">StyledWapper</span></span>
+      <span class="token attr-name">className</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">hs-atom</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span></span>
+      <span class="token attr-name">data-id</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>uid<span class="token punctuation">}</span></span>
+      <span class="token attr-name">settings</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+        align<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+    <span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token punctuation">{</span>children<span class="token punctuation">}</span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">StyledWapper</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Mỗi atoms sẽ có các khu vực:</p> <ul><li>Props: Đầu vào của atom giúp setting styles, functions... của atom</li> <li>Styles: Định nghĩa style của từng dom trong component, chúng ta có sử dụng thư viện <strong>styled-components</strong> để viết styles linh hoạt hơn</li> <li>Function: Là một React Function định nghĩa UI, UX, actions của atom</li></ul> <h2 id="cau-tao-chi-tiet-ve-props"><a href="#cau-tao-chi-tiet-ve-props" class="header-anchor">#</a> Cấu tạo chi tiết về Props</h2> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token keyword">type</span> <span class="token class-name">ButtonProps</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">/**
+  Unique id of the atom
+  */</span>
+  uid<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  <span class="token comment">/**
+  Align the button according to the wapper
+  */</span>
+  align<span class="token operator">?</span><span class="token operator">:</span> <span class="token string">&quot;left&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;right&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;center&quot;</span><span class="token punctuation">;</span>
+  <span class="token comment">/**
+  Set children of button
+  */</span>
+  children<span class="token operator">:</span> React<span class="token punctuation">.</span>ReactNode<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="giai-thich-cac-thanh-phan-trong-props"><a href="#giai-thich-cac-thanh-phan-trong-props" class="header-anchor">#</a> Giải thích các thành phần trong props</h3> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token comment">/**
+Unique id of the atom
+*/</span>
+</code></pre></div><p>Phần comment bên trên mỗi prop trong atom là giải thích chi tiết về prop đó. Khi bạn định nghĩa ở đây thì trong storybook sẽ hiển thị ra UI cho phép mình review nhanh hơn và nhớ lâu hơn.</p> <div class="language-tsx extra-class"><pre class="language-tsx"><code>uid<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</code></pre></div><p>Định nghĩa kiểu dữ liệu của props. Có thể là string, number, array...</p> <p><img src="/docs/assets/img/storybook-comment-prop.1a9edebc.png" alt="Storybook Comment Prop"></p> <h2 id="cau-tao-chi-tiet-ve-styles"><a href="#cau-tao-chi-tiet-ve-styles" class="header-anchor">#</a> Cấu tạo chi tiết về Styles</h2> <div class="language-tsx extra-class"><pre class="language-tsx"><code>theme <span class="token operator">=</span> <span class="token punctuation">{</span>
+  align<span class="token operator">:</span> <span class="token string">&quot;left&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> StyledWapper <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  text-align: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token punctuation">{</span> theme<span class="token punctuation">,</span> settings <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> settings<span class="token operator">?.</span>align <span class="token operator">||</span> theme<span class="token punctuation">.</span>align<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">StyledWapper</span></span> <span class="token attr-name">settings</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> align <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">StyledWapper</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">;</span>
+</code></pre></div><p>Phần styles được viết bằng thư viện <strong>styled-components</strong> với mục tiêu có thể truyền settings từ Function đến styles và sử dụng tính năng theme global style mà thư viện cung cấp</p> <p><strong>Chúng ta có thể viết media responsives trong styled:</strong></p> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token keyword">const</span> StyledWapper <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  text-align: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token punctuation">{</span> theme<span class="token punctuation">,</span> settings <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> settings<span class="token operator">?.</span>align <span class="token operator">||</span> theme<span class="token punctuation">.</span>align<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  @media (max-width: 1200px) {
+    text-align: right;
+  }
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>Trong styled chúng ta có thể viết functions:</strong></p> <p>Chúng ta sẽ sử dụng một vòng for để lặp ra các màn hình trong global style đã định nghĩa.</p> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token keyword">import</span> forResponsives <span class="token keyword">from</span> <span class="token string">&quot;../helpers/forResponsives&quot;</span><span class="token punctuation">;</span>
+
+theme <span class="token operator">=</span> <span class="token punctuation">{</span>
+  responsives<span class="token operator">:</span> <span class="token punctuation">{</span>
+    md<span class="token operator">:</span> <span class="token string">&quot;1200px&quot;</span><span class="token punctuation">,</span>
+    sm<span class="token operator">:</span> <span class="token string">&quot;992px&quot;</span><span class="token punctuation">,</span>
+    xs<span class="token operator">:</span> <span class="token string">&quot;576px&quot;</span><span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  typography<span class="token operator">:</span> <span class="token punctuation">{</span>
+    heading_large<span class="token operator">:</span> <span class="token punctuation">{</span>
+      size<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;51px&quot;</span><span class="token punctuation">,</span>
+        md<span class="token operator">:</span> <span class="token string">&quot;51px&quot;</span><span class="token punctuation">,</span>
+        sm<span class="token operator">:</span> <span class="token string">&quot;44px&quot;</span><span class="token punctuation">,</span>
+        xs<span class="token operator">:</span> <span class="token string">&quot;44px&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    heading<span class="token operator">:</span> <span class="token punctuation">{</span>
+      size<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;38px&quot;</span><span class="token punctuation">,</span>
+        md<span class="token operator">:</span> <span class="token string">&quot;38px&quot;</span><span class="token punctuation">,</span>
+        sm<span class="token operator">:</span> <span class="token string">&quot;33px&quot;</span><span class="token punctuation">,</span>
+        xs<span class="token operator">:</span> <span class="token string">&quot;33px&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    heading_small<span class="token operator">:</span> <span class="token punctuation">{</span>
+      size<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;28px&quot;</span><span class="token punctuation">,</span>
+        md<span class="token operator">:</span> <span class="token string">&quot;28px&quot;</span><span class="token punctuation">,</span>
+        sm<span class="token operator">:</span> <span class="token string">&quot;24px&quot;</span><span class="token punctuation">,</span>
+        xs<span class="token operator">:</span> <span class="token string">&quot;24px&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    sub_heading<span class="token operator">:</span> <span class="token punctuation">{</span>
+      size<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;21px&quot;</span><span class="token punctuation">,</span>
+        md<span class="token operator">:</span> <span class="token string">&quot;21px&quot;</span><span class="token punctuation">,</span>
+        sm<span class="token operator">:</span> <span class="token string">&quot;19px&quot;</span><span class="token punctuation">,</span>
+        xs<span class="token operator">:</span> <span class="token string">&quot;19px&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    body<span class="token operator">:</span> <span class="token punctuation">{</span>
+      size<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;16px&quot;</span><span class="token punctuation">,</span>
+        md<span class="token operator">:</span> <span class="token string">&quot;16px&quot;</span><span class="token punctuation">,</span>
+        sm<span class="token operator">:</span> <span class="token string">&quot;14px&quot;</span><span class="token punctuation">,</span>
+        xs<span class="token operator">:</span> <span class="token string">&quot;14px&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    small<span class="token operator">:</span> <span class="token punctuation">{</span>
+      size<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;12px&quot;</span><span class="token punctuation">,</span>
+        md<span class="token operator">:</span> <span class="token string">&quot;12px&quot;</span><span class="token punctuation">,</span>
+        sm<span class="token operator">:</span> <span class="token string">&quot;11px&quot;</span><span class="token punctuation">,</span>
+        xs<span class="token operator">:</span> <span class="token string">&quot;11px&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">getSizeByLevel</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">settings<span class="token operator">:</span> any</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">switch</span> <span class="token punctuation">(</span>settings<span class="token operator">?.</span>level<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> <span class="token string">&quot;heading_large&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> <span class="token string">&quot;heading&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">3</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> <span class="token string">&quot;heading_small&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">4</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> <span class="token string">&quot;sub_heading&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> <span class="token string">&quot;heading&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> StyledWapper <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  text-align: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token punctuation">{</span> theme<span class="token punctuation">,</span> settings <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> settings<span class="token operator">?.</span>align <span class="token operator">||</span> theme<span class="token punctuation">.</span>align<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token punctuation">{</span> theme<span class="token punctuation">,</span> settings <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+    <span class="token function">forResponsives</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>responsives<span class="token punctuation">,</span> <span class="token punctuation">(</span>key<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> media<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> styles <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+      <span class="token keyword">let</span> size <span class="token operator">=</span>
+        theme<span class="token punctuation">.</span>typography<span class="token punctuation">[</span><span class="token function">getSizeByLevel</span><span class="token punctuation">(</span>settings<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span>size <span class="token operator">&amp;&amp;</span>
+        theme<span class="token punctuation">.</span>typography<span class="token punctuation">[</span><span class="token function">getSizeByLevel</span><span class="token punctuation">(</span>settings<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span>size<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>size<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        styles <span class="token operator">+=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">font-size: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>size<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>styles<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+          @media (max-width: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>media<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">) {
+            </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>styles<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+          }
+        </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+      <span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+      return &quot;&quot;;
+    })}
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="cau-tao-chi-tiet-ve-function"><a href="#cau-tao-chi-tiet-ve-function" class="header-anchor">#</a> Cấu tạo chi tiết về Function</h2> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token comment">/**
+ * Primary UI component for user interaction
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">Button</span><span class="token punctuation">(</span><span class="token punctuation">{</span> uid<span class="token punctuation">,</span> align <span class="token operator">=</span> <span class="token string">&quot;left&quot;</span><span class="token punctuation">,</span> children <span class="token punctuation">}</span><span class="token operator">:</span> ButtonProps<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">StyledWapper</span></span>
+      <span class="token attr-name">className</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">hs-atom</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span></span>
+      <span class="token attr-name">data-id</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>uid<span class="token punctuation">}</span></span>
+      <span class="token attr-name">settings</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+        align<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+    <span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token punctuation">{</span>children<span class="token punctuation">}</span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">StyledWapper</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Đầu vào của Function là props đã được định nghĩa, các props đó sẽ được lập trình viên quyết định xử dụng trong atom như nào</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.b3934109.js" defer></script><script src="/docs/assets/js/2.6bd783f9.js" defer></script><script src="/docs/assets/js/7.b88a9935.js" defer></script>
+  </body>
+</html>

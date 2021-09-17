@@ -1,3 +1,5 @@
+const path = require('path');
+let srcPath = path.resolve(__dirname, '../')
 module.exports = {
   dest: 'docs',
   base: '/docs/',
@@ -176,7 +178,7 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        "@": "..",
+        "@": srcPath,
       },
     },
   },

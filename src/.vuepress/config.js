@@ -118,6 +118,10 @@ module.exports = {
                 text: "Coding Convention",
                 link: "/backend/coding-convention/",
               },
+              {
+                text: "Resources",
+                link: "/backend/resources/",
+              },
             ]
           },
           {

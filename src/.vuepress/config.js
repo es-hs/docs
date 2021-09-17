@@ -62,32 +62,80 @@ module.exports = {
         link: "/introduce/",
       },
       {
-        text: "Global Styles",
-        link: "/global-styles/",
+        text: "Frontend",
+        link: "/frontend/",
+        items: [
+          {
+            text: "Customer",
+            items: [
+              {
+                text: "Global Styles",
+                link: "/frontend/global-styles/"
+              },
+              {
+                text: "Online Store",
+                link: "/frontend/online-store/",
+              },
+              {
+                text: "Components",
+                link: "/frontend/components/",
+              },
+            ]
+          },
+          {
+            text: "System",
+            items: [
+              {
+                text: "Dashboard",
+                link: "/frontend/dashboard/",
+              },
+              {
+                text: "Editor",
+                link: "/frontend/editor/",
+              },
+              {
+                text: "Admin",
+                link: "/frontend/admin/",
+              }
+            ]
+          },
+        ]
       },
       {
-        text: "Components",
-        link: "/components/",
-      },
-      {
-        text: "Online Store",
-        link: "/online-store/",
-      },
-      {
-        text: "AWS",
-        link: "/aws/",
-      },
-      {
-        text: "Dashboard",
-        link: "/dashboard/",
-      },
-      {
-        text: "Editor",
-        link: "/editor/",
-      },
-      {
-        text: "Admin",
-        link: "/admin/",
+        text: "Backend",
+        link: "/backend/",
+        items: [
+          {
+            text: "General",
+            items: [
+              {
+                text: "AWS",
+                link: "/backend/aws/",
+              },
+              {
+                text: "Code Conversion",
+                link: "/backend/code-conversion/",
+              },
+            ]
+          },
+          {
+            text: "System",
+            items: [
+              {
+                text: "Online Store",
+                link: "/backend/online-store/",
+              },
+              {
+                text: "Build Code",
+                link: "/backend/build-code/",
+              },
+              {
+                text: "Dashboard Editor",
+                link: "/backend/dashboard-editor/",
+              },
+            ]
+          },
+        ]
       },
       {
         text: "Changelog",

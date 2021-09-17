@@ -115,8 +115,8 @@ module.exports = {
                 link: "/backend/aws/",
               },
               {
-                text: "Code Conversion",
-                link: "/backend/code-conversion/",
+                text: "Coding Convention",
+                link: "/backend/coding-convention/",
               },
             ]
           },

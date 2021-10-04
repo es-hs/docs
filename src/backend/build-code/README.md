@@ -12,4 +12,4 @@ Server có chức năng build và deploy storefront cho khách.
 
 # Cloudflare
 1. Phải cấu hình TLS là full (forced) nếu không sẽ bị lỗi "Too many redirects".
-2. Không dùng được record \*, vì Cloudflare sẽ không proxy.
+2. Không dùng được record \*, vì Cloudflare sẽ không proxy. Như vậy thì không dùng được Cloudflare cho domain mặc định kiểu shop1.ecomsolid.com.

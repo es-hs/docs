@@ -22,15 +22,14 @@ Server có chức năng build và deploy storefront application cho khách.
 3. Cần cấu hình region trong bảng `region_configs` để hệ thống biết có thể deploy vào region nào, các thông tin để deploy của region là gì.
 4. Một shop chạy trên ít nhất 2 EC2 instance, các instance này phải có chung tag `Name`. Các cụm EC2 khác nhau phải có tag `Name` khác nhau. Thông tin của các cụm EC2 này phải được lưu vào bảng `ec2_instance_groups` để hệ thống biết để deploy.
 5. Mỗi shop chạy trên cùng một cụm EC2 sẽ chạy trên các port khác nhau.
-6. Các EC2 instance làm proxy server phải có cùng tag `Name` là `EcomSolidCustomerProxy`
-7. Dùng 1 EC2 instance chạy TLS certificate service và đặt tag `Name` là `EcomSolidTlsGenerator`. EC2 instance này cũng phải mount EFS storage dùng chung với cụm proxy để dùng chung cấu hình nginx. Service này phụ trách chạy lệnh để thêm mới và renew TLS certificate cho các shop có kết nối domain riêng. Service này sử dụng CodePipeline để deploy.
-8. Cụm máy chủ proxy đảm nhiệm việc phân luồng request vào các shop vào đúng cụm máy EC2 và port tương ứng với mỗi shop theo domain.
-9. Các máy chủ proxy đặt trong public subnet (nên chuyển sang private subnet)
-10. Các máy chủ EC2 chạy shop của khách được đặt trong các private subnet để tăng tính bảo mật.
-11. Dùng AWS System Manager để chạy lệnh update hệ thống thường xuyên cho các máy EC2.
-12. Balancer của cụm proxy phải là ALB, vì NLB có vẻ sẽ sleep khi không có client connect. (Đã test bằng cách tạo NLB cho 1 target group. Sau 1 thời gian mới truy cập endpoint thì chờ rất lâu mới load được page)
-13. Muốn forward HTTPS request qua ALB thì cần add TLS certificate vào listener của ALB, vì vậy sau khi được nhận được certificate từ LetsEncrypt thì phải import vào AWS Certificate Manager và add vào HTTPS listener của ALB.
-14. Balancer của cụm proxy sẽ redirect request vào port 80 về port 443 (để force SSL), nhưng request để verify domain của LetsEncrypt sẽ được forward về server TLS certificate service trên port 80.
+6. Các EC2 instance làm proxy server phải có cùng tag `Name`
+7. Cụm máy chủ proxy đảm nhiệm việc phân luồng request vào các shop vào đúng cụm máy EC2 và port tương ứng với mỗi shop theo domain.
+8. Các máy chủ proxy đặt trong public subnet (nên chuyển sang private subnet)
+9.  Các máy chủ EC2 chạy shop của khách được đặt trong các private subnet để tăng tính bảo mật.
+10. Dùng AWS System Manager để chạy lệnh update hệ thống thường xuyên cho các máy EC2.
+11. Balancer của cụm proxy phải là ALB, vì NLB có vẻ sẽ sleep khi không có client connect. (Đã test bằng cách tạo NLB cho 1 target group. Sau 1 thời gian mới truy cập endpoint thì chờ rất lâu mới load được page)
+12. Muốn forward HTTPS request qua ALB thì cần add TLS certificate vào listener của ALB, vì vậy sau khi được nhận được certificate từ LetsEncrypt thì phải import vào AWS Certificate Manager và add vào HTTPS listener của ALB.
+13. Balancer của cụm proxy sẽ redirect request vào port 80 về port 443 (để force SSL), nhưng request để verify domain của LetsEncrypt sẽ được forward về server TLS certificate service trên port 80.
 
 # Các hàm GRPC
 ## DeployShop
@@ -58,3 +57,10 @@ Dùng AWS SSM chạy command restart process của shop trên cụm EC2
 Params:
 - ShopDomain `string required`: domain ES của shop (ví dụ: `example.es-hs.com`)
 - Region `string required`: AWS region (`us-north-1`,...)
+
+# TLS Certificate Service
+Là service thực hiện tạo TLS certificate cho custom domains của khách.
+### Lưu ý
+- Service này phải được deploy trên một EC2 instance vì chúng ta dùng `certbot` để tạo certificate. Hơn nữa còn có thể mount chung file system storage với cụm proxy server để dùng chung nginx configs.
+- Khi deploy lần đầu cần ssh vào server để cấu hình file `env.yml`
+- File `create_service.py` trong thư mục `scripts` trên repo có chứa thông tin deploy

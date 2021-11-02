@@ -132,6 +132,10 @@ module.exports = {
                 link: "/backend/online-store/",
               },
               {
+                text: "Ecommerce Integrations",
+                link: "/backend/ecommerce-integrations/",
+              },
+              {
                 text: "Build Code",
                 link: "/backend/build-code/",
               },

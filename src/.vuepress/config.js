@@ -143,6 +143,10 @@ module.exports = {
                 text: "Dashboard Editor",
                 link: "/backend/dashboard-editor/",
               },
+              {
+                text: "App API",
+                link: "/backend/app-api/",
+              },
             ]
           },
         ]

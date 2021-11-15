@@ -122,6 +122,10 @@ module.exports = {
                 text: "Resources",
                 link: "/backend/resources/",
               },
+              {
+                text: "GraphQL",
+                link: "/backend/graphql/",
+              },
             ]
           },
           {

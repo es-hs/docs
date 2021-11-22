@@ -1,0 +1,48 @@
+# Basic Controls
+
+## Input
+
+Image:
+![Control input](~@/assets/images/controls/input.png)
+
+Define:
+```json
+{
+    "id": "text",
+    "type": "input",
+    "label": "Text",
+    "default": "Lorem Ipsum is simply dummy text"
+}
+```
+
+Advanced Attributes:
+```json
+{
+    "readonly": true // Định nghĩa input chỉ đọc
+}
+```
+
+## Select
+
+Image:
+![Control select](~@/assets/images/controls/select.png)
+
+Define:
+```json
+{
+    "id": "tag",
+    "type": "select",
+    "label": "Tag",
+    "default": "p",
+    "options": [
+        {
+            "value": "p",
+            "label": "P"
+        },
+        {
+            "value": "span",
+            "label": "Span"
+        }
+    ],
+}
+```

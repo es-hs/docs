@@ -98,7 +98,11 @@ module.exports = {
               {
                 text: "Admin",
                 link: "/frontend/admin/",
-              }
+              },
+              {
+                text: "Controls",
+                link: "/frontend/controls/",
+              },
             ]
           },
         ]
@@ -172,11 +176,18 @@ module.exports = {
           children: [""],
         },
       ],
-      "/components/": [
+      "/frontend/components/": [
         {
           title: "Components",
           collapsable: false,
           children: ["", "atoms"],
+        },
+      ],
+      "/frontend/controls/": [
+        {
+          title: "Controls",
+          collapsable: false,
+          children: ["", "standard-attributes", "advanced-attributes", "basic-controls", "specialized-controls", "deprecated-controls"],
         },
       ],
       "/changelog/": [],

@@ -187,7 +187,7 @@ module.exports = {
         {
           title: "Controls",
           collapsable: false,
-          children: ["", "standard-attributes", "advanced-attributes", "basic-controls", "specialized-controls", "deprecated-controls"],
+          children: ["", "standard-attributes", "advanced-attributes", "basic-controls", "specialized-controls", "deprecated-controls", "how-to-create-control"],
         },
       ],
       "/changelog/": [],

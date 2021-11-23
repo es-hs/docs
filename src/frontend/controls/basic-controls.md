@@ -22,6 +22,30 @@ Advanced Attributes:
 }
 ```
 
+## Input Number
+
+Image:
+![Control input number](~@/assets/images/controls/input-number.png)
+
+Define:
+```json
+{
+    "id": "test",
+    "type": "input:number",
+    "label": "Input Number TEST"
+}
+```
+
+Advanced Attributes:
+```json
+{
+    "min": 10,
+    "max": 100,
+    "placeholder": "placeholder...",
+    "readonly": true // Định nghĩa input chỉ đọc
+}
+```
+
 ## Select
 
 Image:

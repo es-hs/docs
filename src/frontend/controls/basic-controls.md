@@ -46,6 +46,31 @@ Advanced Attributes:
 }
 ```
 
+## Input Unit
+
+Image:
+![Control input number](~@/assets/images/controls/input-unit.png)
+
+Define:
+```json
+{
+    "id": "test",
+    "type": "input:unit",
+    "label": "Input Unit TEST"
+}
+```
+
+Advanced Attributes:
+```json
+{
+    "min": 10,
+    "max": 100,
+    "placeholder": "placeholder...",
+    "units": ["em", "px"],
+    "readonly": true // Định nghĩa input chỉ đọc
+}
+```
+
 ## Select
 
 Image:

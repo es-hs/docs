@@ -71,6 +71,27 @@ Advanced Attributes:
 }
 ```
 
+## Input Fix Content
+Image:
+![Control input number](~@/assets/images/controls/input-fix-content.png)
+
+Define:
+```json
+{
+    "id": "productSaleOff",
+    "type": "input:fixContent",
+    "label": "Product Sale Off",
+    "default": "Sale off [!Profit!] %"
+}
+```
+
+Advanced Attributes:
+```json
+{
+    "readonly": true // Định nghĩa input chỉ đọc
+}
+```
+
 ## Select
 
 Image:

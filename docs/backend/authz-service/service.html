@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Environment variables | Headless Storefront Dev</title>
+    <meta name="description" content="Tài liệu hướng dẫn cho lập trình viên Headless Storefront">
+    <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="robots" content="noindex">
+  <script>
+        window.onload = function() {
+          requestAnimationFrame(function() {
+            if (location.hash) {
+              const element = document.getElementById(location.hash.slice(1));
+
+              if (element) {
+                element.scrollIntoView();
+              }
+            }
+          });
+        };
+      </script>
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.66e6eb78.css" as="style"><link rel="preload" href="/docs/assets/js/app.c81fb6db.js" as="script"><link rel="preload" href="/docs/assets/js/12.ff6e1f6b.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.d06d1bb0.js"><link rel="prefetch" href="/docs/assets/js/11.bb34a383.js"><link rel="prefetch" href="/docs/assets/js/13.282dd4c0.js"><link rel="prefetch" href="/docs/assets/js/14.0ff08c2e.js"><link rel="prefetch" href="/docs/assets/js/15.76aa5772.js"><link rel="prefetch" href="/docs/assets/js/16.8267e0af.js"><link rel="prefetch" href="/docs/assets/js/17.46e23af0.js"><link rel="prefetch" href="/docs/assets/js/18.e46e01e9.js"><link rel="prefetch" href="/docs/assets/js/19.a840b9a3.js"><link rel="prefetch" href="/docs/assets/js/2.d1563c89.js"><link rel="prefetch" href="/docs/assets/js/20.bcb16ae1.js"><link rel="prefetch" href="/docs/assets/js/21.801694fb.js"><link rel="prefetch" href="/docs/assets/js/22.2cf94aa7.js"><link rel="prefetch" href="/docs/assets/js/23.b805e5e5.js"><link rel="prefetch" href="/docs/assets/js/24.9f61fd27.js"><link rel="prefetch" href="/docs/assets/js/25.66992ff2.js"><link rel="prefetch" href="/docs/assets/js/26.74e2eab4.js"><link rel="prefetch" href="/docs/assets/js/27.ebb19542.js"><link rel="prefetch" href="/docs/assets/js/28.ce199d1e.js"><link rel="prefetch" href="/docs/assets/js/29.69178ed3.js"><link rel="prefetch" href="/docs/assets/js/3.efec374c.js"><link rel="prefetch" href="/docs/assets/js/30.59c77d88.js"><link rel="prefetch" href="/docs/assets/js/31.f976a662.js"><link rel="prefetch" href="/docs/assets/js/32.bde104bc.js"><link rel="prefetch" href="/docs/assets/js/33.1c696452.js"><link rel="prefetch" href="/docs/assets/js/4.d3b54565.js"><link rel="prefetch" href="/docs/assets/js/5.48f2620e.js"><link rel="prefetch" href="/docs/assets/js/6.61862c72.js"><link rel="prefetch" href="/docs/assets/js/7.41f58fa4.js"><link rel="prefetch" href="/docs/assets/js/8.bab5a09d.js"><link rel="prefetch" href="/docs/assets/js/9.42bc774d.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.66e6eb78.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Headless Storefront Dev</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/introduce/" class="nav-link">Introduce</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Frontend</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Customer</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/global-styles/" class="nav-link">Global Styles</a></li><li class="dropdown-subitem"><a href="/docs/frontend/online-store/" class="nav-link">Online Store</a></li><li class="dropdown-subitem"><a href="/docs/frontend/components/" class="nav-link">Components</a></li></ul></li><li class="dropdown-item"><h4>System</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/dashboard/" class="nav-link">Dashboard</a></li><li class="dropdown-subitem"><a href="/docs/frontend/editor/" class="nav-link">Editor</a></li><li class="dropdown-subitem"><a href="/docs/frontend/admin/" class="nav-link">Admin</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Backend</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>General</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/aws/" class="nav-link">AWS</a></li><li class="dropdown-subitem"><a href="/docs/backend/coding-convention/" class="nav-link">Coding Convention</a></li><li class="dropdown-subitem"><a href="/docs/backend/resources/" class="nav-link">Resources</a></li></ul></li><li class="dropdown-item"><h4>System</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/online-store/" class="nav-link">Online Store</a></li><li class="dropdown-subitem"><a href="/docs/backend/ecommerce-integrations/" class="nav-link">Ecommerce Integrations</a></li><li class="dropdown-subitem"><a href="/docs/backend/build-code/" class="nav-link">Build Code</a></li><li class="dropdown-subitem"><a href="/docs/backend/dashboard-editor/" class="nav-link">Dashboard Editor</a></li><li class="dropdown-subitem"><a href="/docs/backend/app-api/" class="nav-link">App API</a></li><li class="dropdown-subitem"><a href="/docs/backend/authz-service/" class="nav-link router-link-active">Authz Service</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/changelog/" class="nav-link">Changelog</a></div><div class="nav-item"><a href="https://github.com/es-hs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/introduce/" class="nav-link">Introduce</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Frontend</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Customer</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/global-styles/" class="nav-link">Global Styles</a></li><li class="dropdown-subitem"><a href="/docs/frontend/online-store/" class="nav-link">Online Store</a></li><li class="dropdown-subitem"><a href="/docs/frontend/components/" class="nav-link">Components</a></li></ul></li><li class="dropdown-item"><h4>System</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/dashboard/" class="nav-link">Dashboard</a></li><li class="dropdown-subitem"><a href="/docs/frontend/editor/" class="nav-link">Editor</a></li><li class="dropdown-subitem"><a href="/docs/frontend/admin/" class="nav-link">Admin</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Backend</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>General</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/aws/" class="nav-link">AWS</a></li><li class="dropdown-subitem"><a href="/docs/backend/coding-convention/" class="nav-link">Coding Convention</a></li><li class="dropdown-subitem"><a href="/docs/backend/resources/" class="nav-link">Resources</a></li></ul></li><li class="dropdown-item"><h4>System</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/online-store/" class="nav-link">Online Store</a></li><li class="dropdown-subitem"><a href="/docs/backend/ecommerce-integrations/" class="nav-link">Ecommerce Integrations</a></li><li class="dropdown-subitem"><a href="/docs/backend/build-code/" class="nav-link">Build Code</a></li><li class="dropdown-subitem"><a href="/docs/backend/dashboard-editor/" class="nav-link">Dashboard Editor</a></li><li class="dropdown-subitem"><a href="/docs/backend/app-api/" class="nav-link">App API</a></li><li class="dropdown-subitem"><a href="/docs/backend/authz-service/" class="nav-link router-link-active">Authz Service</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/changelog/" class="nav-link">Changelog</a></div><div class="nav-item"><a href="https://github.com/es-hs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </div> <div class="page"> <div class="content"><h3 id="environment-variables"><a href="#environment-variables" class="header-anchor">#</a> Environment variables</h3> <div class="language- extra-class"><pre class="language-text"><code>GRPC_PORT: cổng phát gRPC, mặc định là 50051
+REDIS_URL= url đến backend redis
+</code></pre></div><h2 id="project-structure"><a href="#project-structure" class="header-anchor">#</a> Project structure</h2> <p><img src="https://s3-ap-southeast-1.amazonaws.com/gemtickets/production/dashboard/05106130-6c06-4d4d-9d11-c6aab95dbdd6.png" alt="image"></p> <div class="language- extra-class"><pre class="language-text"><code>configs : thư mục chứa package config
+
+./configs/policy/rbac_with_domain_no_obj : file cấu hình casbin
+
+modules: thư mục chứa module
+
+package: các package thêm , hiện tại sẽ có casbinhelper để wrap 1 số hàm của casbin cho dễ sử  dụng và define các roles / permission ( do roles / permission trong mỗi store đều giống hệt nhau nên mình ko cần casbin làm hộ phần này )
+
+scripts: chứa script watch / build image ( updating ... )
+
+.env.example: chứa env example
+</code></pre></div><h2 id="list-rule-va-permission-khi-su-dung"><a href="#list-rule-va-permission-khi-su-dung" class="header-anchor">#</a> List rule và permission khi sử dụng</h2> <ul><li><p>Mặc định danh sách các roles và permission sẽ được lưu ở <code>package/casbinhelper/constant.go</code>, Khi cập nhật để thêm roles / permission sẽ cần cập nhật ở cả client và trên package service</p></li> <li><p>VD : Với 1 shop có id là X cần định nghĩa 4 role owner, admin, shop_read, shop_write , trong đó thì</p> <ul><li>owner và admin có quyền login</li> <li>shop_read có quyền shop_read</li> <li>shop_write có quyền shop_write</li> <li>việc định nghĩa owner inherit role của admin</li> <li>và admin inherit 2 roles shop_read, shop_write sẽ định nghĩa khi <code>casbin client</code> gọi sang <code>casbin service</code> , ở service mình chỉ định nghĩa các roles và quyền của các roles</li></ul></li> <li><p>Trong file <code>package/casbinhelper/constant.go</code> quy định các <code>roles</code> và <code>permission</code> như sau</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>package casbinhelper
+
+const (
+	OWNER_ROLE     = &quot;owner&quot;
+	ADMIN_ROLE     = &quot;admin&quot;
+	SHOP_READ      = &quot;shop_read&quot;
+	SHOP_WRITE     = &quot;shop_write&quot;
+)
+
+const (
+	LOGIN_PERMISSION          = &quot;login&quot;
+	SHOP_READ_PERMISSION      = &quot;shop_read&quot;
+	SHOP_WRITE_PERMISSION     = &quot;shop_write&quot;
+)
+
+</code></pre></div><p>Trong file <code>package/casbinhelper/init.go</code> cần khởi tạo các role tương ứng với <code>permission</code> nào</p> <div class="language- extra-class"><pre class="language-text"><code>func init() {
+	mapRolePermission = make(map[string]map[string]bool)
+	mapScope = make(map[string]bool)
+	mapRolePermission[OWNER_ROLE] = map[string]bool{
+		LOGIN_PERMISSION: true,
+	}
+	mapRolePermission[ADMIN_ROLE] = map[string]bool{
+		LOGIN_PERMISSION: true,
+	}
+	mapRolePermission[SHOP_READ] = map[string]bool{
+		SHOP_READ_PERMISSION: true,
+	}
+	mapRolePermission[SHOP_WRITE] = map[string]bool{
+		SHOP_WRITE_PERMISSION: true,
+	}
+}
+
+</code></pre></div><p>Khi cần định nghĩa thêm role và permission, tạo constant thêm bên file <code>package/casbinhelper/constant.go</code> và bổ sung bên file <code>init.go</code> . Sau đó cập nhật các constant bên <code>https://github.com/es-hs/authzclient</code></p> <h3 id="run-locally"><a href="#run-locally" class="header-anchor">#</a> Run locally</h3> <p><code>make watch</code> -  Yêu cầu đã chạy redis ở local và sử dụng .env như file example</p></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/docs/assets/js/app.c81fb6db.js" defer></script><script src="/docs/assets/js/12.ff6e1f6b.js" defer></script>
+  </body>
+</html>

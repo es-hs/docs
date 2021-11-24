@@ -147,6 +147,10 @@ module.exports = {
                 text: "App API",
                 link: "/backend/app-api/",
               },
+              {
+                text: "Authz Service",
+                link: "/backend/authz-service/",
+              },
             ]
           },
         ]

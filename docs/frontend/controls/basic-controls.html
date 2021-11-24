@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Basic Controls | Headless Storefront Dev</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <script>
+        window.onload = function() {
+          requestAnimationFrame(function() {
+            if (location.hash) {
+              const element = document.getElementById(location.hash.slice(1));
+
+              if (element) {
+                element.scrollIntoView();
+              }
+            }
+          });
+        };
+      </script>
+    <meta name="description" content="Tài liệu hướng dẫn cho lập trình viên Headless Storefront">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="robots" content="noindex">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.7792b47b.css" as="style"><link rel="preload" href="/docs/assets/js/app.c825cb5b.js" as="script"><link rel="preload" href="/docs/assets/js/2.22a05312.js" as="script"><link rel="preload" href="/docs/assets/js/3.9262f230.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.84637db6.js"><link rel="prefetch" href="/docs/assets/js/11.88709c4f.js"><link rel="prefetch" href="/docs/assets/js/12.787f36c3.js"><link rel="prefetch" href="/docs/assets/js/13.1f1a2c8a.js"><link rel="prefetch" href="/docs/assets/js/14.707d7639.js"><link rel="prefetch" href="/docs/assets/js/15.638559ad.js"><link rel="prefetch" href="/docs/assets/js/16.055741a6.js"><link rel="prefetch" href="/docs/assets/js/17.a7062ac1.js"><link rel="prefetch" href="/docs/assets/js/18.aefcf6ed.js"><link rel="prefetch" href="/docs/assets/js/19.53cc33d9.js"><link rel="prefetch" href="/docs/assets/js/20.ff2604e4.js"><link rel="prefetch" href="/docs/assets/js/21.1c243ffb.js"><link rel="prefetch" href="/docs/assets/js/22.70385434.js"><link rel="prefetch" href="/docs/assets/js/23.4541304d.js"><link rel="prefetch" href="/docs/assets/js/24.84c7fc49.js"><link rel="prefetch" href="/docs/assets/js/25.d449857e.js"><link rel="prefetch" href="/docs/assets/js/26.9ba5a879.js"><link rel="prefetch" href="/docs/assets/js/27.bd95c5ee.js"><link rel="prefetch" href="/docs/assets/js/28.a4be15f8.js"><link rel="prefetch" href="/docs/assets/js/29.c17310fe.js"><link rel="prefetch" href="/docs/assets/js/30.c3ffd3fa.js"><link rel="prefetch" href="/docs/assets/js/31.4f0967b8.js"><link rel="prefetch" href="/docs/assets/js/32.5c5f86ac.js"><link rel="prefetch" href="/docs/assets/js/33.02b570ae.js"><link rel="prefetch" href="/docs/assets/js/34.c3a4e85c.js"><link rel="prefetch" href="/docs/assets/js/35.efa43062.js"><link rel="prefetch" href="/docs/assets/js/36.be3fc7f1.js"><link rel="prefetch" href="/docs/assets/js/37.55c6ed09.js"><link rel="prefetch" href="/docs/assets/js/38.fa55b44e.js"><link rel="prefetch" href="/docs/assets/js/39.75380a3e.js"><link rel="prefetch" href="/docs/assets/js/4.d195cdb9.js"><link rel="prefetch" href="/docs/assets/js/40.ab08b309.js"><link rel="prefetch" href="/docs/assets/js/41.5bdd1a0d.js"><link rel="prefetch" href="/docs/assets/js/42.599156d4.js"><link rel="prefetch" href="/docs/assets/js/5.ec7635da.js"><link rel="prefetch" href="/docs/assets/js/6.8882c70e.js"><link rel="prefetch" href="/docs/assets/js/7.208bc7ea.js"><link rel="prefetch" href="/docs/assets/js/8.6d234b01.js"><link rel="prefetch" href="/docs/assets/js/9.7538dc5f.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.7792b47b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Headless Storefront Dev</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/introduce/" class="nav-link">
+  Introduce
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Frontend" class="dropdown-title"><span class="title">Frontend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Frontend" class="mobile-dropdown-title"><span class="title">Frontend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Customer
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/global-styles/" class="nav-link">
+  Global Styles
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/components/" class="nav-link">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/dashboard/" class="nav-link">
+  Dashboard
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/editor/" class="nav-link">
+  Editor
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/admin/" class="nav-link">
+  Admin
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/controls/" class="nav-link router-link-active">
+  Controls
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Backend" class="dropdown-title"><span class="title">Backend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Backend" class="mobile-dropdown-title"><span class="title">Backend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          General
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/aws/" class="nav-link">
+  AWS
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/coding-convention/" class="nav-link">
+  Coding Convention
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/resources/" class="nav-link">
+  Resources
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/graphql/" class="nav-link">
+  GraphQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/ecommerce-integrations/" class="nav-link">
+  Ecommerce Integrations
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/build-code/" class="nav-link">
+  Build Code
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/dashboard-editor/" class="nav-link">
+  Dashboard Editor
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/app-api/" class="nav-link">
+  App API
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/changelog/" class="nav-link">
+  Changelog
+</a></div><div class="nav-item"><a href="https://github.com/es-hs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/introduce/" class="nav-link">
+  Introduce
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Frontend" class="dropdown-title"><span class="title">Frontend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Frontend" class="mobile-dropdown-title"><span class="title">Frontend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Customer
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/global-styles/" class="nav-link">
+  Global Styles
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/components/" class="nav-link">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/dashboard/" class="nav-link">
+  Dashboard
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/editor/" class="nav-link">
+  Editor
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/admin/" class="nav-link">
+  Admin
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/controls/" class="nav-link router-link-active">
+  Controls
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Backend" class="dropdown-title"><span class="title">Backend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Backend" class="mobile-dropdown-title"><span class="title">Backend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          General
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/aws/" class="nav-link">
+  AWS
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/coding-convention/" class="nav-link">
+  Coding Convention
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/resources/" class="nav-link">
+  Resources
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/graphql/" class="nav-link">
+  GraphQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/ecommerce-integrations/" class="nav-link">
+  Ecommerce Integrations
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/build-code/" class="nav-link">
+  Build Code
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/dashboard-editor/" class="nav-link">
+  Dashboard Editor
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/app-api/" class="nav-link">
+  App API
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/changelog/" class="nav-link">
+  Changelog
+</a></div><div class="nav-item"><a href="https://github.com/es-hs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Controls</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/frontend/controls/" aria-current="page" class="sidebar-link">Giới thiệu Control</a></li><li><a href="/docs/frontend/controls/standard-attributes.html" class="sidebar-link">Standard Attributes</a></li><li><a href="/docs/frontend/controls/advanced-attributes.html" class="sidebar-link">Advanced Attributes</a></li><li><a href="/docs/frontend/controls/basic-controls.html" aria-current="page" class="active sidebar-link">Basic Controls</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/frontend/controls/basic-controls.html#input" class="sidebar-link">Input</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/controls/basic-controls.html#input-number" class="sidebar-link">Input Number</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/controls/basic-controls.html#select" class="sidebar-link">Select</a></li></ul></li><li><a href="/docs/frontend/controls/specialized-controls.html" class="sidebar-link">Specialized Controls</a></li><li><a href="/docs/frontend/controls/deprecated-controls.html" class="sidebar-link">Deprecated Controls</a></li><li><a href="/docs/frontend/controls/how-to-create-control.html" class="sidebar-link">How to create a control</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="basic-controls"><a href="#basic-controls" class="header-anchor">#</a> Basic Controls</h1> <h2 id="input"><a href="#input" class="header-anchor">#</a> Input</h2> <p>Image:
+<img src="/docs/assets/img/input.52e995e0.png" alt="Control input"></p> <p>Define:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;input&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Text&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;default&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Lorem Ipsum is simply dummy text&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Advanced Attributes:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;readonly&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// Định nghĩa input chỉ đọc</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="input-number"><a href="#input-number" class="header-anchor">#</a> Input Number</h2> <p>Image:
+<img src="data:image/png;base64,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" alt="Control input number"></p> <p>Define:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;input:number&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Input Number TEST&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Advanced Attributes:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;min&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;max&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;placeholder...&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;readonly&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// Định nghĩa input chỉ đọc</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="select"><a href="#select" class="header-anchor">#</a> Select</h2> <p>Image:
+<img src="/docs/assets/img/select.b9468c81.png" alt="Control select"></p> <p>Define:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tag&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;select&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Tag&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;default&quot;</span><span class="token operator">:</span> <span class="token string">&quot;p&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;options&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;p&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;P&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;span&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Span&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/frontend/controls/advanced-attributes.html" class="prev">
+        Advanced Attributes
+      </a></span> <span class="next"><a href="/docs/frontend/controls/specialized-controls.html">
+        Specialized Controls
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.c825cb5b.js" defer></script><script src="/docs/assets/js/2.22a05312.js" defer></script><script src="/docs/assets/js/3.9262f230.js" defer></script>
+  </body>
+</html>

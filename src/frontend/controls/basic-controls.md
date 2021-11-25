@@ -130,7 +130,7 @@ Define:
 ## Textarea
 
 Image:
-![Control textarea](~@/assets/images/controls/input-unit.png)
+![Control textarea](~@/assets/images/controls/textarea.png)
 
 Define:
 
@@ -157,7 +157,7 @@ Advanced Attributes:
 ## Toggle
 
 Image:
-![Control toggle](~@/assets/images/controls/input-unit.png)
+![Control toggle](~@/assets/images/controls/toggle.png)
 
 Define:
 

@@ -153,3 +153,27 @@ Advanced Attributes:
   "readonly": true // Định nghĩa input chỉ đọc
 }
 ```
+
+## Toggle
+
+Image:
+![Control toggle](~@/assets/images/controls/input-unit.png)
+
+Define:
+
+```json
+{
+  "id": "test",
+  "type": "toggle",
+  "label": "Toggle TEST",
+  "simple": true
+}
+```
+
+Advanced Attributes:
+
+```json
+{
+  "readonly": true // Định nghĩa input chỉ đọc
+}
+```

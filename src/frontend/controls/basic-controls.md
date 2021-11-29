@@ -53,7 +53,7 @@ Advanced Attributes:
 ## Input Unit
 
 Image:
-![Control input number](~@/assets/images/controls/input-unit.png)
+![Control input unit](~@/assets/images/controls/input-unit.png)
 
 Define:
 
@@ -80,7 +80,7 @@ Advanced Attributes:
 ## Input Fix Content
 
 Image:
-![Control input number](~@/assets/images/controls/input-fix-content.png)
+![Control input fix content](~@/assets/images/controls/input-fix-content.png)
 
 Define:
 
@@ -175,5 +175,45 @@ Advanced Attributes:
 ```json
 {
   "readonly": true // Định nghĩa input chỉ đọc
+}
+```
+
+## Radio
+
+Image:
+![Control input radio](~@/assets/images/controls/radio.png)
+
+Define:
+
+```json
+{
+  "id": "Radio",
+  "type": "radioGroup",
+  "label": "Radio Group",
+  "simple": true
+}
+```
+
+Advanced Attributes:
+
+```json
+{
+  "options": [
+    {
+      "text": "Unset",
+      "desc": "",
+      "value": "unset"
+    },
+    {
+      "text": "None",
+      "desc": "",
+      "value": "none"
+    },
+    {
+      "text": "Initial",
+      "desc": "",
+      "value": "initial"
+    }
+  ]
 }
 ```

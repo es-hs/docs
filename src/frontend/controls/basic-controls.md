@@ -257,3 +257,25 @@ Advanced Attributes:
   ]
 }
 ```
+
+## Icon
+
+Image:
+![Control input icon](~@/assets/images/controls/icon.png)
+
+Define:
+
+```json
+{
+  "id": "sectionIcon",
+  "type": "icon",
+  "label": "Icon",
+  "simple": true
+}
+```
+
+Advanced Attributes:
+
+```json
+
+```

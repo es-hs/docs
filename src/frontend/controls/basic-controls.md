@@ -217,3 +217,43 @@ Advanced Attributes:
   ]
 }
 ```
+
+## Checkbox
+
+Image:
+![Control input checkbox](~@/assets/images/controls/checkbox.png)
+
+Define:
+
+```json
+{
+  "id": "Checkbox",
+  "type": "checkbox",
+  "label": "Checkbox Group",
+  "simple": true
+}
+```
+
+Advanced Attributes:
+
+```json
+{
+  "options": [
+    {
+      "text": "Unset",
+      "desc": "",
+      "value": "unset"
+    },
+    {
+      "text": "None",
+      "desc": "",
+      "value": "none"
+    },
+    {
+      "text": "Initial",
+      "desc": "",
+      "value": "initial"
+    }
+  ]
+}
+```

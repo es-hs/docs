@@ -246,7 +246,10 @@ Add new object to the code below still exist:
 },
 ```
 
-> All the exported module will be auto imported, read code in `mock/_createProductionServer.ts`
+### Notes
+
+- All the exported module will be auto imported, read code in `mock/_createProductionServer.ts`
+- Status field code in mock file to 4xx if you want to test error response
 
 Almost done! :)
 

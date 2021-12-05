@@ -1,8 +1,8 @@
-const path = require('path');
-let srcPath = path.resolve(__dirname, '../')
+const path = require("path");
+let srcPath = path.resolve(__dirname, "../");
 module.exports = {
-  dest: 'docs',
-  base: '/docs/',
+  dest: "docs",
+  base: "/docs/",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
@@ -24,10 +24,7 @@ module.exports = {
       "meta",
       { name: "apple-mobile-web-app-status-bar-style", content: "black" },
     ],
-    [
-      "meta",
-      { name: "robots", content: "noindex" },
-    ],
+    ["meta", { name: "robots", content: "noindex" }],
     [
       "script",
       {},
@@ -72,7 +69,7 @@ module.exports = {
             items: [
               {
                 text: "Global Styles",
-                link: "/frontend/global-styles/"
+                link: "/frontend/global-styles/",
               },
               {
                 text: "Online Store",
@@ -82,7 +79,7 @@ module.exports = {
                 text: "Components",
                 link: "/frontend/components/",
               },
-            ]
+            ],
           },
           {
             text: "System",
@@ -103,9 +100,9 @@ module.exports = {
                 text: "Controls",
                 link: "/frontend/controls/",
               },
-            ]
+            ],
           },
-        ]
+        ],
       },
       {
         text: "Backend",
@@ -130,7 +127,7 @@ module.exports = {
                 text: "GraphQL",
                 link: "/backend/graphql/",
               },
-            ]
+            ],
           },
           {
             text: "System",
@@ -159,9 +156,9 @@ module.exports = {
                 text: "Authz Service",
                 link: "/backend/authz-service/",
               },
-            ]
+            ],
           },
-        ]
+        ],
       },
       {
         text: "Changelog",
@@ -191,7 +188,36 @@ module.exports = {
         {
           title: "Controls",
           collapsable: false,
-          children: ["", "standard-attributes", "advanced-attributes", "basic-controls", "specialized-controls", "deprecated-controls", "how-to-create-control"],
+          children: [
+            "",
+            "standard-attributes",
+            "advanced-attributes",
+            "basic-controls",
+            "specialized-controls",
+            "deprecated-controls",
+            "how-to-create-control",
+          ],
+        },
+      ],
+      "/backend/ecommerce-integrations/": [
+        {
+          title: "Ecommerce Integrations",
+          collapsable: false,
+          children: [
+            "",
+            "setup",
+            "structure",
+            "running-local",
+            "connect-database",
+            "new-module",
+          ],
+        },
+      ],
+      "/frontend/dashboard/": [
+        {
+          title: "Dashboard Documents",
+          collapsable: false,
+          children: ["", "mock-data"],
         },
       ],
       "/changelog/": [],

@@ -29,7 +29,12 @@ type ButtonProps = {
   children: React.ReactNode;
 };
 
-const StyledWapper = styled.div`
+type StyledWrapper = {
+  settings?: {
+    align?: ButtonProps['align']
+  }
+}
+const StyledWrapper = styled.div<StyledWrapper>`
   text-align: ${({ theme, settings }) => settings?.align || theme.align};
 `;
 
@@ -38,7 +43,7 @@ const StyledWapper = styled.div`
  */
 export default function Button({ uid, align = "left", children }: ButtonProps) {
   return (
-    <StyledWapper
+    <StyledWrapper
       className={`hs-atom`}
       data-id={uid}
       settings={{
@@ -46,7 +51,7 @@ export default function Button({ uid, align = "left", children }: ButtonProps) {
       }}
     >
       {children}
-    </StyledWapper>
+    </StyledWrapper>
   );
 }
 ```
@@ -100,11 +105,11 @@ uid?: string;
 theme = {
   align: "left",
 };
-const StyledWapper = styled.div`
+const StyledWrapper = styled.div`
   text-align: ${({ theme, settings }) => settings?.align || theme.align};
 `;
 
-<StyledWapper settings={{ align }}></StyledWapper>;
+<StyledWrapper settings={{ align }}></StyledWrapper>;
 ```
 
 Phần styles được viết bằng thư viện **styled-components** với mục tiêu có thể truyền settings từ Function đến styles và sử dụng tính năng theme global style mà thư viện cung cấp
@@ -112,7 +117,7 @@ Phần styles được viết bằng thư viện **styled-components** với m�
 **Chúng ta có thể viết media responsives trong styled:**
 
 ```tsx
-const StyledWapper = styled.div`
+const StyledWrapper = styled.div`
   text-align: ${({ theme, settings }) => settings?.align || theme.align};
   @media (max-width: 1200px) {
     text-align: right;
@@ -125,90 +130,33 @@ const StyledWapper = styled.div`
 Chúng ta sẽ sử dụng một vòng for để lặp ra các màn hình trong global style đã định nghĩa.
 
 ```tsx
-import forResponsives from "../helpers/forResponsives";
+import forDevices from "../helpers/forDevices";
 
 theme = {
-  responsives: {
-    md: "1200px",
-    sm: "992px",
-    xs: "576px",
-    default: "",
+  devices: {
+    mobile: '767px',
+    tablet: '1024px',
+    desktop: '',
   },
   typography: {
-    heading_large: {
+    primary: {
       size: {
-        default: "51px",
-        md: "51px",
-        sm: "44px",
-        xs: "44px",
-      },
-    },
-    heading: {
-      size: {
-        default: "38px",
-        md: "38px",
-        sm: "33px",
-        xs: "33px",
-      },
-    },
-    heading_small: {
-      size: {
-        default: "28px",
-        md: "28px",
-        sm: "24px",
-        xs: "24px",
-      },
-    },
-    sub_heading: {
-      size: {
-        default: "21px",
-        md: "21px",
-        sm: "19px",
-        xs: "19px",
-      },
-    },
-    body: {
-      size: {
-        default: "16px",
-        md: "16px",
-        sm: "14px",
-        xs: "14px",
-      },
-    },
-    small: {
-      size: {
-        default: "12px",
-        md: "12px",
-        sm: "11px",
-        xs: "11px",
-      },
-    },
-  },
-};
-
-const getSizeByLevel = (settings: any) => {
-  switch (settings?.level) {
-    case 1:
-      return "heading_large";
-    case 2:
-      return "heading";
-    case 3:
-      return "heading_small";
-    case 4:
-      return "sub_heading";
-    default:
-      return "heading";
+        mobile: '33px',
+        tablet: '33px',
+        desktop: '48px',
+      }
+    }
   }
 };
 
-const StyledWapper = styled.div`
+const StyledWrapper = styled.div`
   text-align: ${({ theme, settings }) => settings?.align || theme.align};
   ${({ theme, settings }) =>
-    forResponsives(theme.responsives, (key: string, media: string): string => {
+    forDevices(theme?.devices, (key: NameDevices, media: string): string => {
       let styles = "";
       let size =
-        theme.typography[getSizeByLevel(settings)].size &&
-        theme.typography[getSizeByLevel(settings)].size[key];
+        theme.typography.primary.size &&
+        theme.typography.primary.size[key];
       if (size) {
         styles += `font-size: ${size};`;
       }
@@ -232,7 +180,7 @@ const StyledWapper = styled.div`
  */
 export default function Button({ uid, align = "left", children }: ButtonProps) {
   return (
-    <StyledWapper
+    <StyledWrapper
       className={`hs-atom`}
       data-id={uid}
       settings={{
@@ -240,7 +188,7 @@ export default function Button({ uid, align = "left", children }: ButtonProps) {
       }}
     >
       {children}
-    </StyledWapper>
+    </StyledWrapper>
   );
 }
 ```

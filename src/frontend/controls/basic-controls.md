@@ -261,7 +261,7 @@ Advanced Attributes:
 ## Icon
 
 Image:
-![Control input icon](~@/assets/images/controls/icon.png)
+![Control icon](~@/assets/images/controls/icon.png)
 
 Define:
 
@@ -270,6 +270,29 @@ Define:
   "id": "sectionIcon",
   "type": "icon",
   "label": "Icon",
+  "simple": true
+}
+```
+
+Advanced Attributes:
+
+```json
+
+```
+
+## Grid
+
+Image:
+![Control grid](~@/assets/images/controls/grid.png)
+
+Define:
+
+```json
+{
+  "id": "gridLayout",
+  "label": "Grid",
+  "type": "grid",
+  "info": "Grid Layout",
   "simple": true
 }
 ```

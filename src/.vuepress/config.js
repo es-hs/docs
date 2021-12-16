@@ -1,16 +1,16 @@
-const path = require("path");
-let srcPath = path.resolve(__dirname, "../");
+const path = require('path');
+let srcPath = path.resolve(__dirname, '../');
 module.exports = {
-  dest: "docs",
-  base: "/docs/",
+  dest: 'docs',
+  base: '/docs/',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: "Headless Storefront Dev",
+  title: 'Headless Storefront Dev',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: "Tài liệu hướng dẫn cho lập trình viên Headless Storefront",
+  description: 'Tài liệu hướng dẫn cho lập trình viên Headless Storefront',
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -18,15 +18,12 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ["meta", { name: "theme-color", content: "#3eaf7c" }],
-    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['meta', { name: 'robots', content: 'noindex' }],
     [
-      "meta",
-      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
-    ],
-    ["meta", { name: "robots", content: "noindex" }],
-    [
-      "script",
+      'script',
       {},
       `
         window.onload = function() {
@@ -50,177 +47,170 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: "",
+    repo: '',
     editLinks: false,
-    docsDir: "",
-    editLinkText: "",
+    docsDir: '',
+    editLinkText: '',
     lastUpdated: false,
     nav: [
       {
-        text: "Introduce",
-        link: "/introduce/",
+        text: 'Introduce',
+        link: '/introduce/',
       },
       {
-        text: "Frontend",
-        link: "/frontend/",
+        text: 'Frontend',
+        link: '/frontend/',
         items: [
           {
-            text: "Customer",
+            text: 'Customer',
             items: [
               {
-                text: "Global Styles",
-                link: "/frontend/global-styles/",
+                text: 'Global Styles',
+                link: '/frontend/global-styles/',
               },
               {
-                text: "Online Store",
-                link: "/frontend/online-store/",
+                text: 'Online Store',
+                link: '/frontend/online-store/',
               },
               {
-                text: "Components",
-                link: "/frontend/components/",
+                text: 'Components',
+                link: '/frontend/components/',
               },
             ],
           },
           {
-            text: "System",
+            text: 'System',
             items: [
               {
-                text: "Dashboard",
-                link: "/frontend/dashboard/",
+                text: 'Dashboard',
+                link: '/frontend/dashboard/',
               },
               {
-                text: "Editor",
-                link: "/frontend/editor/",
+                text: 'Editor',
+                link: '/frontend/editor/',
               },
               {
-                text: "Admin",
-                link: "/frontend/admin/",
+                text: 'Admin',
+                link: '/frontend/admin/',
               },
               {
-                text: "Controls",
-                link: "/frontend/controls/",
+                text: 'Controls',
+                link: '/frontend/controls/',
               },
             ],
           },
         ],
       },
       {
-        text: "Backend",
-        link: "/backend/",
+        text: 'Backend',
+        link: '/backend/',
         items: [
           {
-            text: "General",
+            text: 'General',
             items: [
               {
-                text: "AWS",
-                link: "/backend/aws/",
+                text: 'AWS',
+                link: '/backend/aws/',
               },
               {
-                text: "Coding Convention",
-                link: "/backend/coding-convention/",
+                text: 'Coding Convention',
+                link: '/backend/coding-convention/',
               },
               {
-                text: "Resources",
-                link: "/backend/resources/",
+                text: 'Resources',
+                link: '/backend/resources/',
               },
               {
-                text: "GraphQL",
-                link: "/backend/graphql/",
+                text: 'GraphQL',
+                link: '/backend/graphql/',
               },
             ],
           },
           {
-            text: "System",
+            text: 'System',
             items: [
               {
-                text: "Online Store",
-                link: "/backend/online-store/",
+                text: 'Online Store',
+                link: '/backend/online-store/',
               },
               {
-                text: "Ecommerce Integrations",
-                link: "/backend/ecommerce-integrations/",
+                text: 'Ecommerce Integrations',
+                link: '/backend/ecommerce-integrations/',
               },
               {
-                text: "Build Code",
-                link: "/backend/build-code/",
+                text: 'Build Code',
+                link: '/backend/build-code/',
               },
               {
-                text: "Dashboard Editor",
-                link: "/backend/dashboard-editor/",
+                text: 'Dashboard Editor',
+                link: '/backend/dashboard-editor/',
               },
               {
-                text: "App API",
-                link: "/backend/app-api/",
+                text: 'App API',
+                link: '/backend/app-api/',
               },
               {
-                text: "Authz Service",
-                link: "/backend/authz-service/",
+                text: 'Authz Service',
+                link: '/backend/authz-service/',
               },
             ],
           },
         ],
       },
       {
-        text: "Changelog",
-        link: "/changelog/",
+        text: 'Changelog',
+        link: '/changelog/',
       },
       {
-        text: "Github",
-        link: "https://github.com/es-hs",
+        text: 'Github',
+        link: 'https://github.com/es-hs',
       },
     ],
     sidebar: {
-      "/global-styles/": [
+      '/global-styles/': [
         {
-          title: "Global Styles",
+          title: 'Global Styles',
           collapsable: false,
-          children: [""],
+          children: [''],
         },
       ],
-      "/frontend/components/": [
+      '/frontend/components/': [
         {
-          title: "Components",
+          title: 'Components',
           collapsable: false,
-          children: ["", "atoms"],
+          children: ['', 'component', 'getting-started', 'monorepo-structure', 'create-component'],
         },
       ],
-      "/frontend/controls/": [
+      '/frontend/controls/': [
         {
-          title: "Controls",
+          title: 'Controls',
           collapsable: false,
           children: [
-            "",
-            "standard-attributes",
-            "advanced-attributes",
-            "basic-controls",
-            "specialized-controls",
-            "deprecated-controls",
-            "how-to-create-control",
+            '',
+            'standard-attributes',
+            'advanced-attributes',
+            'basic-controls',
+            'specialized-controls',
+            'deprecated-controls',
+            'how-to-create-control',
           ],
         },
       ],
-      "/backend/ecommerce-integrations/": [
+      '/backend/ecommerce-integrations/': [
         {
-          title: "Ecommerce Integrations",
+          title: 'Ecommerce Integrations',
           collapsable: false,
-          children: [
-            "",
-            "setup",
-            "structure",
-            "running-local",
-            "connect-database",
-            "new-module",
-          ],
+          children: ['', 'setup', 'structure', 'running-local', 'connect-database', 'new-module'],
         },
       ],
-      "/frontend/dashboard/": [
+      '/frontend/dashboard/': [
         {
-          title: "Dashboard Documents",
+          title: 'Dashboard Documents',
           collapsable: false,
-          children: ["", "mock-data"],
+          children: ['', 'mock-data'],
         },
       ],
-      "/changelog/": [],
+      '/changelog/': [],
     },
   },
 
@@ -228,14 +218,14 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
-    "@vuepress/plugin-back-to-top",
-    "@vuepress/plugin-medium-zoom",
-    "vuepress-plugin-smooth-scroll",
+    '@vuepress/plugin-back-to-top',
+    '@vuepress/plugin-medium-zoom',
+    'vuepress-plugin-smooth-scroll',
   ],
   configureWebpack: {
     resolve: {
       alias: {
-        "@": srcPath,
+        '@': srcPath,
       },
     },
   },

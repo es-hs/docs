@@ -14,8 +14,10 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
     "nodemon": "^2.0.12",
     "vuepress": "^1.8.2",
-    "vuepress-plugin-smooth-scroll": "0.0.10"
+    "vuepress-plugin-smooth-scroll": "^0.0.10"
   }
 }

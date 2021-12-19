@@ -257,3 +257,91 @@ Advanced Attributes:
   ]
 }
 ```
+
+## Position
+
+Image:
+![Control position](~@/assets/images/controls/position.png)
+
+Define:
+
+```json
+{
+  "id": "Position",
+  "type": "position",
+  "label": "Position TEST",
+  "simple": true
+}
+```
+
+Advanced Attributes:
+
+```json
+{
+  "default": {
+      "x": "50%",
+      "y": "50%"
+  },
+  "info": "This is Position"
+}
+```
+
+## Margin
+
+Image:
+![Control margin](~@/assets/images/controls/margin.png)
+
+Define:
+
+```json
+{
+  "id": "Margin",
+  "label": "Margin",
+  "type": "margin",
+  "simple": true
+}
+```
+
+Advanced Attributes:
+
+```json
+{
+  "default": {
+      "top": "20px",
+      "left": "20px",
+      "right": "20px",
+      "bottom": "20px"
+  },
+  "info": "This is Margin test",
+}
+```
+
+## Padding
+
+Image:
+![Control padding](~@/assets/images/controls/padding.png)
+
+Define:
+
+```json
+{
+  "id": "Padding",
+  "label": "Padding",
+  "type": "padding",
+  "simple": true
+}
+```
+
+Advanced Attributes:
+
+```json
+{
+  "default": {
+      "top": "20px",
+      "left": "20px",
+      "right": "20px",
+      "bottom": "20px"
+  },
+  "info": "This is Padding test",
+}
+```

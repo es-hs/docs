@@ -178,7 +178,14 @@ module.exports = {
         {
           title: 'Components',
           collapsable: false,
-          children: ['', 'component', 'getting-started', 'monorepo-structure', 'create-component'],
+          children: [
+            '',
+            'component',
+            'getting-started',
+            'monorepo-structure',
+            'component-structure',
+            'tutorial',
+          ],
         },
       ],
       '/frontend/controls/': [

@@ -22,7 +22,7 @@
 
 ## Cấu trúc thư mục
 
-```tree
+```
 .
 ├── packages                # Thư mục chính chứa các component
 │   ├── component-a         # Gói chứa component-a

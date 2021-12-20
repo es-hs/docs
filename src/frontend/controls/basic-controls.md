@@ -258,18 +258,18 @@ Advanced Attributes:
 }
 ```
 
-## Icon
+## Position
 
 Image:
-![Control icon](~@/assets/images/controls/icon.png)
+![Control position](~@/assets/images/controls/position.png)
 
 Define:
 
 ```json
 {
-  "id": "sectionIcon",
-  "type": "icon",
-  "label": "Icon",
+  "id": "Position",
+  "type": "position",
+  "label": "Position TEST",
   "simple": true
 }
 ```
@@ -277,22 +277,27 @@ Define:
 Advanced Attributes:
 
 ```json
-
+{
+  "default": {
+      "x": "50%",
+      "y": "50%"
+  },
+  "info": "This is Position"
+}
 ```
 
-## Grid
+## Margin
 
 Image:
-![Control grid](~@/assets/images/controls/grid.png)
+![Control margin](~@/assets/images/controls/margin.png)
 
 Define:
 
 ```json
 {
-  "id": "gridLayout",
-  "label": "Grid",
-  "type": "grid",
-  "info": "Grid Layout",
+  "id": "Margin",
+  "label": "Margin",
+  "type": "margin",
   "simple": true
 }
 ```
@@ -300,5 +305,43 @@ Define:
 Advanced Attributes:
 
 ```json
+{
+  "default": {
+      "top": "20px",
+      "left": "20px",
+      "right": "20px",
+      "bottom": "20px"
+  },
+  "info": "This is Margin test",
+}
+```
 
+## Padding
+
+Image:
+![Control padding](~@/assets/images/controls/padding.png)
+
+Define:
+
+```json
+{
+  "id": "Padding",
+  "label": "Padding",
+  "type": "padding",
+  "simple": true
+}
+```
+
+Advanced Attributes:
+
+```json
+{
+  "default": {
+      "top": "20px",
+      "left": "20px",
+      "right": "20px",
+      "bottom": "20px"
+  },
+  "info": "This is Padding test",
+}
 ```

@@ -2,7 +2,7 @@ const path = require('path');
 let srcPath = path.resolve(__dirname, '../');
 module.exports = {
   dest: 'docs',
-  base: '/',
+  base: '/docs/',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */

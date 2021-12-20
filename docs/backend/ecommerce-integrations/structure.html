@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Structure | Headless Storefront Dev</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <script>
+        window.onload = function() {
+          requestAnimationFrame(function() {
+            if (location.hash) {
+              const element = document.getElementById(location.hash.slice(1));
+
+              if (element) {
+                element.scrollIntoView();
+              }
+            }
+          });
+        };
+      </script>
+    <meta name="description" content="Tài liệu hướng dẫn cho lập trình viên Headless Storefront">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="robots" content="noindex">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.8e10aaac.css" as="style"><link rel="preload" href="/docs/assets/js/app.1f5d7a79.js" as="script"><link rel="preload" href="/docs/assets/js/2.e6fb6131.js" as="script"><link rel="preload" href="/docs/assets/js/28.82a9abdb.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.490ce5c1.js"><link rel="prefetch" href="/docs/assets/js/11.5433d3b8.js"><link rel="prefetch" href="/docs/assets/js/12.e2dd6c26.js"><link rel="prefetch" href="/docs/assets/js/13.d91bbd73.js"><link rel="prefetch" href="/docs/assets/js/14.d721e613.js"><link rel="prefetch" href="/docs/assets/js/15.ca898990.js"><link rel="prefetch" href="/docs/assets/js/16.ff6edf74.js"><link rel="prefetch" href="/docs/assets/js/17.18fd15ca.js"><link rel="prefetch" href="/docs/assets/js/18.0524d7d6.js"><link rel="prefetch" href="/docs/assets/js/19.247c19fd.js"><link rel="prefetch" href="/docs/assets/js/20.63f1ab0d.js"><link rel="prefetch" href="/docs/assets/js/21.0b9a9b7a.js"><link rel="prefetch" href="/docs/assets/js/22.c25041e9.js"><link rel="prefetch" href="/docs/assets/js/23.c179241f.js"><link rel="prefetch" href="/docs/assets/js/24.0a99ada0.js"><link rel="prefetch" href="/docs/assets/js/25.c7fc79a3.js"><link rel="prefetch" href="/docs/assets/js/26.59158c11.js"><link rel="prefetch" href="/docs/assets/js/27.8de500a1.js"><link rel="prefetch" href="/docs/assets/js/29.d08e3d46.js"><link rel="prefetch" href="/docs/assets/js/3.64fbe8f9.js"><link rel="prefetch" href="/docs/assets/js/30.6bbdb1a6.js"><link rel="prefetch" href="/docs/assets/js/31.3f3aaa30.js"><link rel="prefetch" href="/docs/assets/js/32.83b11f3d.js"><link rel="prefetch" href="/docs/assets/js/33.3bd1750e.js"><link rel="prefetch" href="/docs/assets/js/34.314d7d5f.js"><link rel="prefetch" href="/docs/assets/js/35.fc780fad.js"><link rel="prefetch" href="/docs/assets/js/36.57b87293.js"><link rel="prefetch" href="/docs/assets/js/37.efcfa38c.js"><link rel="prefetch" href="/docs/assets/js/38.d6cd55df.js"><link rel="prefetch" href="/docs/assets/js/39.f82bb312.js"><link rel="prefetch" href="/docs/assets/js/4.891cfac8.js"><link rel="prefetch" href="/docs/assets/js/40.10d05c2b.js"><link rel="prefetch" href="/docs/assets/js/41.fee06d6f.js"><link rel="prefetch" href="/docs/assets/js/42.38d2365f.js"><link rel="prefetch" href="/docs/assets/js/43.a84a3e1a.js"><link rel="prefetch" href="/docs/assets/js/44.dba5f444.js"><link rel="prefetch" href="/docs/assets/js/45.2c64702b.js"><link rel="prefetch" href="/docs/assets/js/46.c25c98b6.js"><link rel="prefetch" href="/docs/assets/js/47.442944c5.js"><link rel="prefetch" href="/docs/assets/js/48.f1622245.js"><link rel="prefetch" href="/docs/assets/js/49.e78156fb.js"><link rel="prefetch" href="/docs/assets/js/5.4a0ee755.js"><link rel="prefetch" href="/docs/assets/js/50.30ea3088.js"><link rel="prefetch" href="/docs/assets/js/6.86de5e45.js"><link rel="prefetch" href="/docs/assets/js/7.021a88ce.js"><link rel="prefetch" href="/docs/assets/js/8.ee9c423d.js"><link rel="prefetch" href="/docs/assets/js/9.cc73d285.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.8e10aaac.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Headless Storefront Dev</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/introduce/" class="nav-link">
+  Introduce
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Frontend" class="dropdown-title"><span class="title">Frontend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Frontend" class="mobile-dropdown-title"><span class="title">Frontend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Customer
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/global-styles/" class="nav-link">
+  Global Styles
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/components/" class="nav-link">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/dashboard/" class="nav-link">
+  Dashboard
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/editor/" class="nav-link">
+  Editor
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/admin/" class="nav-link">
+  Admin
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/controls/" class="nav-link">
+  Controls
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Backend" class="dropdown-title"><span class="title">Backend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Backend" class="mobile-dropdown-title"><span class="title">Backend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          General
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/aws/" class="nav-link">
+  AWS
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/coding-convention/" class="nav-link">
+  Coding Convention
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/resources/" class="nav-link">
+  Resources
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/graphql/" class="nav-link">
+  GraphQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/ecommerce-integrations/" class="nav-link router-link-active">
+  Ecommerce Integrations
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/build-code/" class="nav-link">
+  Build Code
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/dashboard-editor/" class="nav-link">
+  Dashboard Editor
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/app-api/" class="nav-link">
+  App API
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/authz-service/" class="nav-link">
+  Authz Service
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/changelog/" class="nav-link">
+  Changelog
+</a></div><div class="nav-item"><a href="https://github.com/es-hs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/introduce/" class="nav-link">
+  Introduce
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Frontend" class="dropdown-title"><span class="title">Frontend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Frontend" class="mobile-dropdown-title"><span class="title">Frontend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Customer
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/global-styles/" class="nav-link">
+  Global Styles
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/components/" class="nav-link">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/dashboard/" class="nav-link">
+  Dashboard
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/editor/" class="nav-link">
+  Editor
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/admin/" class="nav-link">
+  Admin
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/controls/" class="nav-link">
+  Controls
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Backend" class="dropdown-title"><span class="title">Backend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Backend" class="mobile-dropdown-title"><span class="title">Backend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          General
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/aws/" class="nav-link">
+  AWS
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/coding-convention/" class="nav-link">
+  Coding Convention
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/resources/" class="nav-link">
+  Resources
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/graphql/" class="nav-link">
+  GraphQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/ecommerce-integrations/" class="nav-link router-link-active">
+  Ecommerce Integrations
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/build-code/" class="nav-link">
+  Build Code
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/dashboard-editor/" class="nav-link">
+  Dashboard Editor
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/app-api/" class="nav-link">
+  App API
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/authz-service/" class="nav-link">
+  Authz Service
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/changelog/" class="nav-link">
+  Changelog
+</a></div><div class="nav-item"><a href="https://github.com/es-hs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="structure"><a href="#structure" class="header-anchor">#</a> Structure</h1> <p>Referring from these repositories</p> <ul><li>https://github.com/bxcodec/go-clean-arch</li> <li>https://github.com/golang-standards/project-layout</li></ul> <h2 id="y-nghia-tung-folders"><a href="#y-nghia-tung-folders" class="header-anchor">#</a> Ý nghĩa từng folders</h2> <ul><li>api: Nơi chứa api docs của dự án, ví dụ như swagger</li> <li>cmd: Chứa các hàm main của dự án, ví dụ như hàm main chạy project shopify, hàm main chạy project woocommerce, hàm main chạy seeding,...</li> <li>configs: Chứa các configs chung của toàn hệ thống như file <code>.air.toml</code></li> <li>deployments: Chứa các file deployment của hệ thống như docker, aws, jenkins,...</li> <li>docs (deprecated): Chứa go-docs của dự án</li> <li>driver: Chứa các file kết nối đến database như mysql, postgres, redis,..</li> <li>internal: Source code chính của project sẽ được để tại đây, code được chia các tính năng thành từng module như module product, auth, shop,..
+<ul><li>delivery: Có tác dụng tương dự như controller, nhưng sẽ chứa các phương thức kết nối đến hệ thống như http, graphql, rpc,.. và định nghĩa router của module tại đây</li> <li>usecase: Business logic của hệ thống sẽ tập trung chính tại đây</li> <li>repository: Database logic của hệ thống sẽ tập trung chính tại đây
+<blockquote><p>Tham khảo thêm tại: https://github.com/bxcodec/go-clean-arch</p></blockquote></li></ul></li> <li>pkg: Chứa các package global của toàn hệ thống như seeder, utils, helpers,...</li> <li>scripts: Chứa các file scripts của hệ thống nằm chạy các task nhanh hơn</li></ul> <h2 id="y-nghia-cac-file-config"><a href="#y-nghia-cac-file-config" class="header-anchor">#</a> Ý nghĩa các file config</h2> <ul><li>.editorconfig: File config của VSCode, config 1 số convention chung dành cho team khi code</li> <li>.env.example: File environment mẫu, clone file này khi tạo mới file <code>.env</code>, khi cập nhật biến mới cũng cần thiết cập nhật cả file này cho và thông báo cho team</li> <li>Makefile: file giúp chạy project 1 cách nhanh hơn, bao gồm 1 số lệnh như: chạy server, build server, seeding data,...</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs/assets/js/app.1f5d7a79.js" defer></script><script src="/docs/assets/js/2.e6fb6131.js" defer></script><script src="/docs/assets/js/28.82a9abdb.js" defer></script>
+  </body>
+</html>

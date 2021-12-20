@@ -13,7 +13,7 @@
     "serve": "nodemon --ext md,vue --watch .vuepress --watch . --exec vuepress dev src",
     "build": "vuepress build src",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d docs"
+    "deploy": "gh-pages -d docs -e docs"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2",

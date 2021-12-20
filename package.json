@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "license": "MIT",
-  "homepage": "https://es-hs.github.io/docs/",
+  "homepage": "https://es-hs.github.io",
   "repository": {
     "type": "git",
     "url": "git@github.com:es-hs/docs.git"
@@ -13,7 +13,7 @@
     "serve": "nodemon --ext md,vue --watch .vuepress --watch . --exec vuepress dev src",
     "build": "vuepress build src",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d docs -e docs"
+    "deploy": "gh-pages -b main -d docs"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2",

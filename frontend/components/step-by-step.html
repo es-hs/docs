@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Step by Step | Headless Storefront Dev</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <script>
+        window.onload = function() {
+          requestAnimationFrame(function() {
+            if (location.hash) {
+              const element = document.getElementById(location.hash.slice(1));
+
+              if (element) {
+                element.scrollIntoView();
+              }
+            }
+          });
+        };
+      </script>
+    <meta name="description" content="Tài liệu hướng dẫn cho lập trình viên Headless Storefront">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="robots" content="noindex">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.8e10aaac.css" as="style"><link rel="preload" href="/docs/assets/js/app.5b492c1b.js" as="script"><link rel="preload" href="/docs/assets/js/2.7ddca280.js" as="script"><link rel="preload" href="/docs/assets/js/39.9c31f85b.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.490ce5c1.js"><link rel="prefetch" href="/docs/assets/js/11.5433d3b8.js"><link rel="prefetch" href="/docs/assets/js/12.3b49cd56.js"><link rel="prefetch" href="/docs/assets/js/13.d91bbd73.js"><link rel="prefetch" href="/docs/assets/js/14.d721e613.js"><link rel="prefetch" href="/docs/assets/js/15.ca898990.js"><link rel="prefetch" href="/docs/assets/js/16.17cf6325.js"><link rel="prefetch" href="/docs/assets/js/17.66f33a1b.js"><link rel="prefetch" href="/docs/assets/js/18.63d406dd.js"><link rel="prefetch" href="/docs/assets/js/19.6c3309bc.js"><link rel="prefetch" href="/docs/assets/js/20.63f1ab0d.js"><link rel="prefetch" href="/docs/assets/js/21.0b9a9b7a.js"><link rel="prefetch" href="/docs/assets/js/22.c25041e9.js"><link rel="prefetch" href="/docs/assets/js/23.c179241f.js"><link rel="prefetch" href="/docs/assets/js/24.0a99ada0.js"><link rel="prefetch" href="/docs/assets/js/25.a705da7f.js"><link rel="prefetch" href="/docs/assets/js/26.d2f3d2d7.js"><link rel="prefetch" href="/docs/assets/js/27.8de500a1.js"><link rel="prefetch" href="/docs/assets/js/28.82a9abdb.js"><link rel="prefetch" href="/docs/assets/js/29.d08e3d46.js"><link rel="prefetch" href="/docs/assets/js/3.96998b51.js"><link rel="prefetch" href="/docs/assets/js/30.6bbdb1a6.js"><link rel="prefetch" href="/docs/assets/js/31.a2fc25fe.js"><link rel="prefetch" href="/docs/assets/js/32.8ed13b88.js"><link rel="prefetch" href="/docs/assets/js/33.0fce6931.js"><link rel="prefetch" href="/docs/assets/js/34.7f230e73.js"><link rel="prefetch" href="/docs/assets/js/35.aa2b9cf5.js"><link rel="prefetch" href="/docs/assets/js/36.09a53866.js"><link rel="prefetch" href="/docs/assets/js/37.c953de38.js"><link rel="prefetch" href="/docs/assets/js/38.8edff2b1.js"><link rel="prefetch" href="/docs/assets/js/4.af37873f.js"><link rel="prefetch" href="/docs/assets/js/40.27314ca1.js"><link rel="prefetch" href="/docs/assets/js/41.84ab8e99.js"><link rel="prefetch" href="/docs/assets/js/42.6a15e623.js"><link rel="prefetch" href="/docs/assets/js/43.671d1f9c.js"><link rel="prefetch" href="/docs/assets/js/44.e79131fe.js"><link rel="prefetch" href="/docs/assets/js/45.f6a271e2.js"><link rel="prefetch" href="/docs/assets/js/46.bd231c98.js"><link rel="prefetch" href="/docs/assets/js/47.efea7c7d.js"><link rel="prefetch" href="/docs/assets/js/48.bccd1c53.js"><link rel="prefetch" href="/docs/assets/js/49.0be8c011.js"><link rel="prefetch" href="/docs/assets/js/5.4a0ee755.js"><link rel="prefetch" href="/docs/assets/js/50.bb5780d4.js"><link rel="prefetch" href="/docs/assets/js/51.6f0a975a.js"><link rel="prefetch" href="/docs/assets/js/6.86de5e45.js"><link rel="prefetch" href="/docs/assets/js/7.1000f79b.js"><link rel="prefetch" href="/docs/assets/js/8.fb873a85.js"><link rel="prefetch" href="/docs/assets/js/9.28764320.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.8e10aaac.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Headless Storefront Dev</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/introduce/" class="nav-link">
+  Introduce
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Frontend" class="dropdown-title"><span class="title">Frontend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Frontend" class="mobile-dropdown-title"><span class="title">Frontend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Customer
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/global-styles/" class="nav-link">
+  Global Styles
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/components/" class="nav-link router-link-active">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/dashboard/" class="nav-link">
+  Dashboard
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/editor/" class="nav-link">
+  Editor
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/admin/" class="nav-link">
+  Admin
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/controls/" class="nav-link">
+  Controls
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Backend" class="dropdown-title"><span class="title">Backend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Backend" class="mobile-dropdown-title"><span class="title">Backend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          General
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/aws/" class="nav-link">
+  AWS
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/coding-convention/" class="nav-link">
+  Coding Convention
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/resources/" class="nav-link">
+  Resources
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/graphql/" class="nav-link">
+  GraphQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/ecommerce-integrations/" class="nav-link">
+  Ecommerce Integrations
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/build-code/" class="nav-link">
+  Build Code
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/dashboard-editor/" class="nav-link">
+  Dashboard Editor
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/app-api/" class="nav-link">
+  App API
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/authz-service/" class="nav-link">
+  Authz Service
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/changelog/" class="nav-link">
+  Changelog
+</a></div><div class="nav-item"><a href="https://github.com/es-hs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/introduce/" class="nav-link">
+  Introduce
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Frontend" class="dropdown-title"><span class="title">Frontend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Frontend" class="mobile-dropdown-title"><span class="title">Frontend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Customer
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/global-styles/" class="nav-link">
+  Global Styles
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/components/" class="nav-link router-link-active">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/dashboard/" class="nav-link">
+  Dashboard
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/editor/" class="nav-link">
+  Editor
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/admin/" class="nav-link">
+  Admin
+</a></li><li class="dropdown-subitem"><a href="/docs/frontend/controls/" class="nav-link">
+  Controls
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Backend" class="dropdown-title"><span class="title">Backend</span> <span class="arrow down"></span></button> <button type="button" aria-label="Backend" class="mobile-dropdown-title"><span class="title">Backend</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          General
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/aws/" class="nav-link">
+  AWS
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/coding-convention/" class="nav-link">
+  Coding Convention
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/resources/" class="nav-link">
+  Resources
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/graphql/" class="nav-link">
+  GraphQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          System
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/backend/online-store/" class="nav-link">
+  Online Store
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/ecommerce-integrations/" class="nav-link">
+  Ecommerce Integrations
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/build-code/" class="nav-link">
+  Build Code
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/dashboard-editor/" class="nav-link">
+  Dashboard Editor
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/app-api/" class="nav-link">
+  App API
+</a></li><li class="dropdown-subitem"><a href="/docs/backend/authz-service/" class="nav-link">
+  Authz Service
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/changelog/" class="nav-link">
+  Changelog
+</a></div><div class="nav-item"><a href="https://github.com/es-hs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Components</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/frontend/components/" aria-current="page" class="sidebar-link">Giới thiệu</a></li><li><a href="/docs/frontend/components/component.html" class="sidebar-link">Components</a></li><li><a href="/docs/frontend/components/getting-started.html" class="sidebar-link">Bắt đầu</a></li><li><a href="/docs/frontend/components/monorepo-structure.html" class="sidebar-link">Kiến trúc Monorepo</a></li><li><a href="/docs/frontend/components/component-structure.html" class="sidebar-link">Cấu trúc Component</a></li><li><a href="/docs/frontend/components/tutorial.html" class="sidebar-link">Tutorial</a></li><li><a href="/docs/frontend/components/step-by-step.html" aria-current="page" class="active sidebar-link">Step by Step</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/frontend/components/step-by-step.html#b1-tao-nhanh-phat-trien-moi" class="sidebar-link">B1: Tạo nhánh phát triển mới</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/components/step-by-step.html#b2-len-danh-sach-cac-chuc-nang" class="sidebar-link">B2: Lên danh sách các chức năng</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/components/step-by-step.html#b3-đinh-nghia-cac-thuoc-tinh-props" class="sidebar-link">B3: Định nghĩa các thuộc tính(props)</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/components/step-by-step.html#b4-develop" class="sidebar-link">B4: Develop</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/components/step-by-step.html#b5-tich-hop-voi-storybook" class="sidebar-link">B5: Tích hợp với Storybook</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/components/step-by-step.html#b6-đinh-nghia-cau-hinh-cho-builder" class="sidebar-link">B6: Định nghĩa cấu hình cho builder</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/components/step-by-step.html#b7-finish" class="sidebar-link">B7: Finish</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="step-by-step"><a href="#step-by-step" class="header-anchor">#</a> Step by Step</h1> <p>Phần dưới đây là các bước cần thiết để bắt đầu phát triển một <code>Component</code> với <code>React</code>.</p> <p><strong>Quy ước:</strong></p> <ul><li><code>R</code> - <strong>Rule</strong>: Bắt buộc phải tuân thủ</li> <li><code>P</code> - <strong>Principle</strong>: Quy tắc chung nên tuân thủ</li></ul> <h2 id="b1-tao-nhanh-phat-trien-moi"><a href="#b1-tao-nhanh-phat-trien-moi" class="header-anchor">#</a> B1: Tạo nhánh phát triển mới</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> checkout main
+<span class="token function">git</span> pull origin main
+
+<span class="token function">git</span> checkout -b feature/feature-name
+</code></pre></div><h2 id="b2-len-danh-sach-cac-chuc-nang"><a href="#b2-len-danh-sach-cac-chuc-nang" class="header-anchor">#</a> B2: Lên danh sách các chức năng</h2> <blockquote><p>VD: Component Button</p></blockquote> <ul><li>Cấu hình alignment: <strong>left | center | right</strong> (responsive)</li> <li>Thay đổi kích thước: <strong>large | medium | small</strong> (responsive)</li> <li>Đổi style theo theme: <strong>primary | secondary</strong></li> <li>Đổi HTML Type: <strong>submit | button | reset</strong></li> <li>Full width (responsive)</li> <li>Thêm svg icon</li> <li>Hỗ trợ loading state</li> <li>Render như một hyperlink nếu prop <code>href</code> được truyền vào</li></ul> <blockquote><p>Lưu ý: Có thể lên danh sách vào file sheet hoặc list luôn trên task được assign trên ClickUp.</p></blockquote> <h2 id="b3-đinh-nghia-cac-thuoc-tinh-props"><a href="#b3-đinh-nghia-cac-thuoc-tinh-props" class="header-anchor">#</a> B3: Định nghĩa các thuộc tính(props)</h2> <ul><li><code>P</code>Các props name cần đặt ngắn ngọn và có ý nghĩa.</li> <li><code>P</code>Cần kế thừa các props mặc định của DOM element.</li> <li><code>R</code>Các thuộc tính truyền vào sẽ là <code>optional</code> vì thế cần xem xét giá trị mặc định đồng thời kiểm tra <code>null</code> và <code>undefined</code> trước khi dùng.</li></ul> <p><strong style="color:green;">Best practice:</strong></p> <ul><li><code>P</code>Component nên hỗ trợ các thuôc tính mặc định của DOM</li></ul> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token keyword">type</span> <span class="token class-name">ButtonProps</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  loading<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token operator">&amp;</span> <span class="token constant">JSX</span><span class="token punctuation">.</span>IntrinsicElements<span class="token punctuation">[</span><span class="token string">'button'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> Button<span class="token operator">:</span> React<span class="token punctuation">.</span><span class="token constant">FC</span><span class="token operator">&lt;</span>ButtonProps<span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> children<span class="token punctuation">,</span> loading<span class="token punctuation">,</span> <span class="token operator">...</span>rest <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token spread"><span class="token punctuation">{</span><span class="token operator">...</span>rest<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>loading <span class="token operator">?</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Icon</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>loading<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span> <span class="token operator">:</span> children<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Sử dụng</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Button</span></span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>btn btn-primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">Click here</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Button</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><code>P</code>Tránh override các thuộc tính mặc định của DOM. Nếu override cần bỏ(Omit) type mặc định và có prop thay thế.</li></ul> <div class="language-tsx extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-tsx"><code><span class="token keyword">type</span> <span class="token class-name">ButtonProps</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  loading<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+  type<span class="token operator">?</span><span class="token operator">:</span> <span class="token string">'primary'</span> <span class="token operator">|</span> <span class="token string">'secondary'</span><span class="token punctuation">;</span>
+  htmlType<span class="token operator">?</span><span class="token operator">:</span> <span class="token constant">JSX</span><span class="token punctuation">.</span>IntrinsicElements<span class="token punctuation">[</span><span class="token string">'button'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'type'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token operator">&amp;</span> Omit<span class="token operator">&lt;</span><span class="token constant">JSX</span><span class="token punctuation">.</span>IntrinsicElements<span class="token punctuation">[</span><span class="token string">'button'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'type'</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> Button<span class="token operator">:</span> React<span class="token punctuation">.</span><span class="token constant">FC</span><span class="token operator">&lt;</span>ButtonProps<span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> children<span class="token punctuation">,</span> loading<span class="token punctuation">,</span> className<span class="token punctuation">,</span> htmlType<span class="token punctuation">,</span> <span class="token operator">...</span>rest <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
+      <span class="token spread"><span class="token punctuation">{</span><span class="token operator">...</span>rest<span class="token punctuation">}</span></span>
+      <span class="token attr-name">type</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>htmlType<span class="token punctuation">}</span></span>
+      <span class="token attr-name">className</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>className<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>type <span class="token operator">===</span> <span class="token string">'primary'</span> <span class="token operator">?</span> <span class="token string">'primary'</span> <span class="token operator">:</span> <span class="token string">'secondary'</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span></span>
+    <span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token punctuation">{</span>loading <span class="token operator">?</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Icon</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>loading<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span> <span class="token operator">:</span> children<span class="token punctuation">}</span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Sử dụng</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Button</span></span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>btn btn-primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">htmlType</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">Submit</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Button</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><code>R</code>Các component luôn có thuộc tính <code>uid</code> được truyền vào. Thuộc tính này cần được thêm vào lớp ngoài cùng của component.</li> <li><code>R</code>Lớp ngoài cùng cũng cần được thêm 1 thuộc tính là <code>data-type=&quot;component&quot;</code>.</li> <li><code>R</code>Nếu component cho phép chứa các component khác bên trong thì cần thêm 1 div có thuộc tính <code>data-slot=&quot;children&quot;</code> khi children chưa được truyền vào</li></ul> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> isValidElement <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">type</span> <span class="token class-name">BoxProps</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  uid<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token operator">&amp;</span> <span class="token constant">JSX</span><span class="token punctuation">.</span>IntrinsicElements<span class="token punctuation">[</span><span class="token string">'div'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> Box<span class="token operator">:</span> React<span class="token punctuation">.</span><span class="token constant">FC</span><span class="token operator">&lt;</span>BoxProps<span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> children<span class="token punctuation">,</span> uid<span class="token punctuation">,</span> <span class="token operator">...</span>rest <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token spread"><span class="token punctuation">{</span><span class="token operator">...</span>rest<span class="token punctuation">}</span></span> <span class="token attr-name">data-uid</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>uid<span class="token punctuation">}</span></span> <span class="token attr-name">data-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>component<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token punctuation">{</span><span class="token function">isValidElement</span><span class="token punctuation">(</span>children<span class="token punctuation">)</span> <span class="token operator">?</span> children <span class="token operator">:</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">data-slot</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>children<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">}</span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="b4-develop"><a href="#b4-develop" class="header-anchor">#</a> B4: Develop</h2> <p>Sau khi đã có các thuộc tính được định nghĩa từ Bước 2. Chúng ta bắt đầu vào xây dựng logic và style cho component.</p> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> styled <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@linaria/react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> cls<span class="token punctuation">,</span> screen<span class="token punctuation">,</span> screenValue<span class="token punctuation">,</span> getByScreen <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@ecomsolid/core'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token keyword">type</span> <span class="token punctuation">{</span> BaseProps<span class="token punctuation">,</span> ObjectDevices <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@ecomsolid/core'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> StyledLabel <span class="token operator">=</span> styled<span class="token punctuation">.</span>label<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  font-size: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token punctuation">{</span> fontSize <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> fontSize<span class="token operator">?.</span>desktop <span class="token operator">||</span> <span class="token string">'1rem'</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>screen<span class="token punctuation">.</span>tablet<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> {
+    font-size: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token punctuation">{</span> fontSize <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> fontSize<span class="token operator">?.</span>tablet <span class="token operator">??</span> fontSize<span class="token operator">?.</span>desktop <span class="token operator">??</span> <span class="token string">'1rem'</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  }
+  </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>screen<span class="token punctuation">.</span>mobile<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> {
+    font-size: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token punctuation">{</span> fontSize <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+      fontSize<span class="token operator">?.</span>mobile <span class="token operator">??</span> fontSize<span class="token operator">?.</span>tablet <span class="token operator">??</span> fontSize<span class="token operator">?.</span>desktop <span class="token operator">??</span> <span class="token string">'1rem'</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  }
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+<span class="token comment">// Hoặc dùng các hàm helper của @ecomsolid/core</span>
+<span class="token keyword">const</span> StyledLabel <span class="token operator">=</span> styled<span class="token punctuation">.</span>label<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  font-size: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token function">screenValue</span><span class="token punctuation">(</span><span class="token string">'fontSize'</span><span class="token punctuation">,</span> <span class="token string">'desktop'</span><span class="token punctuation">,</span> <span class="token string">'1rem'</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>screen<span class="token punctuation">.</span>tablet<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> {
+    font-size: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token function">screenValue</span><span class="token punctuation">(</span><span class="token string">'fontSize'</span><span class="token punctuation">,</span> <span class="token string">'tablet'</span><span class="token punctuation">,</span> <span class="token string">'1rem'</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  }
+  </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>screen<span class="token punctuation">.</span>mobile<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> {
+    font-size: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token punctuation">{</span> fontSize <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">getByScreen</span><span class="token punctuation">(</span>fontSize<span class="token punctuation">,</span> <span class="token string">'mobile'</span><span class="token punctuation">,</span> <span class="token string">'1rem'</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  }
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">type</span> <span class="token class-name">LabelProps</span> <span class="token operator">=</span> BaseProps <span class="token operator">&amp;</span> <span class="token punctuation">{</span>
+  text<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  fontSize<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token operator">&amp;</span> <span class="token constant">JSX</span><span class="token punctuation">.</span>IntrinsicElements<span class="token punctuation">[</span><span class="token string">'label'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> Label<span class="token operator">:</span> React<span class="token punctuation">.</span><span class="token constant">VFC</span><span class="token operator">&lt;</span>LabelProps<span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> text<span class="token punctuation">,</span> uid<span class="token punctuation">,</span> className<span class="token punctuation">,</span> <span class="token operator">...</span>rest <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">StyledLabel</span></span> <span class="token spread"><span class="token punctuation">{</span><span class="token operator">...</span>rest<span class="token punctuation">}</span></span> <span class="token attr-name">data-uid</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>uid<span class="token punctuation">}</span></span> <span class="token attr-name">className</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token function">cls</span><span class="token punctuation">(</span><span class="token string">'sf-component'</span><span class="token punctuation">,</span> className<span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token punctuation">{</span>text<span class="token punctuation">}</span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">StyledLabel</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong style="color:green;">Best practice:</strong></p> <ul><li><code>P</code>Đối với component không cho phép truyền <code>children</code> nên dùng <code>React.VFC</code> để định nghĩa component</li> <li><code>P</code>Style động chỉ dùng với các thuộc tính được truyền động từ ngoài vào. <br>
+VD: <code>fontSize</code>, <code>color</code>, <code>backgroundColor</code>, <code>borderRadius</code>, ...</li> <li><code>P</code>Các thuộc tính đã biết trước giá trị chúng ta sẽ dùng class trong Tailwind của nó. <br>
+VD: <code>sf-font-semibold</code>, <code>sf-inline-flex</code>, ...</li> <li><code>R</code>Khi style cho phần <code>responsive</code> cần style từ màn to về màn nhỏ vì chúng ta phát triển <code>Desktop First</code>.</li></ul> <h2 id="b5-tich-hop-voi-storybook"><a href="#b5-tich-hop-voi-storybook" class="header-anchor">#</a> B5: Tích hợp với Storybook</h2> <p>Chi tiết xem tại <a href="/docs/frontend/components/tutorial.html#tich-hop-component-vao-storybook">Đây</a></p> <blockquote><p>Chú ý: Cần test trên các device khác nhau.</p></blockquote> <h2 id="b6-đinh-nghia-cau-hinh-cho-builder"><a href="#b6-đinh-nghia-cau-hinh-cho-builder" class="header-anchor">#</a> B6: Định nghĩa cấu hình cho builder</h2> <p>Sau khi phát triển xong component chúng ta cần định nghĩa cấu hình cho phần builder.</p> <p>VD:</p> <div class="language-json extra-class"><div class="highlight-lines"><br><br><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Label&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Label&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;setting&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;controls&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Label content&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;input&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;style&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;controls&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fontSize&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Font Size&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;input:number&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;devices&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;desktop&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;default&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1rem&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tablet&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;default&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.8rem&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;mobile&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;default&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.6rem&quot;</span> <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>Chú ý: Chúng ta có thể định nghĩa cấu hình bằng file <code>json</code> hoặc <code>js</code> tuy nhiên nên sử dụng <code>js</code> để định nghĩa vì sẽ hỗ trợ TypeChecking của TypeScript.</p></blockquote> <p><strong style="color:green;">Best practice:</strong></p> <ul><li><code>P</code>Các phần liên quan đến style sẽ chuyển qua <code>style</code> area: VD: <code>fontSize</code>, <code>color</code>, <code>backgroundColor</code>, <code>borderRadius</code>, ...</li> <li><code>P</code>Các phần liên quan đến dữ liệu sẽ chuyển qua <code>setting</code> area: VD: <code>src</code>, <code>alt</code>, <code>href</code>, <code>text</code>, <code>aria-label</code> ...</li></ul> <h2 id="b7-finish"><a href="#b7-finish" class="header-anchor">#</a> B7: Finish</h2> <ul><li>Đẩy code lên nhánh <code>feature/feature-name</code> đã tạo</li> <li>Tạo pull request với nhánh <code>main</code></li> <li>Xóa branch <code>feature/feature-name</code> sau khi đã phát triển xong</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/frontend/components/tutorial.html" class="prev">
+        Tutorial
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs/assets/js/app.5b492c1b.js" defer></script><script src="/docs/assets/js/2.7ddca280.js" defer></script><script src="/docs/assets/js/39.9c31f85b.js" defer></script>
+  </body>
+</html>

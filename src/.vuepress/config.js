@@ -185,6 +185,7 @@ module.exports = {
             'monorepo-structure',
             'component-structure',
             'tutorial',
+            'step-by-step',
           ],
         },
       ],
